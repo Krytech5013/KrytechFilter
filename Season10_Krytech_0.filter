@@ -1432,7 +1432,7 @@ ItemDisplay[SET paf !ID]:%PX-68%%RED%*%NAME%%RED%*//Griswold's Honor
 ItemDisplay[SET 7ws !ID]:%PX-68%%RED%*%NAME%%RED%*//Griswold's Redemption
 
 //Immortal King
-ItemDisplay[SET xar !ID]:%NAME%//Immortal King's Will
+ItemDisplay[SET ba5 !ID]:%NAME%//Immortal King's Will
 ItemDisplay[SET uar !ID]:%NAME%//Immortal King's Soul Cage
 ItemDisplay[SET xhb !ID]:%NAME%//Immortal King's Pillar
 ItemDisplay[SET zhb !ID]:%NAME%//Immortal King's Detail
