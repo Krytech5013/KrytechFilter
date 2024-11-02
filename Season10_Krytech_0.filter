@@ -17,6 +17,8 @@
 
 ItemDisplayFilterName[]:Default
 ItemDisplayFilterName[]:Hidden
+ItemDisplayFilterName[]:Craft
+
 
 // 0 ##### BaseConfig START ##############################################################################################################################
 
@@ -978,14 +980,14 @@ ItemDisplay[RUNE>0]: %NAME%%ORANGE%{%TAN%Control%WHITE%+%TAN%Shift %WHITE%click 
 
 // 7 ##### Crafting START ##############################################################################################################################
 
-ItemDisplay[ci3 NMAG SOCK=0 !INF]: %NAME% %GRAY% - imbue
+ItemDisplay[ci3 NMAG SOCK=0 !INF]:%NAME% %GRAY% - imbue
 //ItemDisplay[THROWING (MAG OR RARE) !CRAFT ETH]: %DOT-9B%%RED% Craft - %BLUE%%NAME%%RED% - Craft
-ItemDisplay[clb (MAG OR RARE) !CRAFT !ETH]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
-ItemDisplay[7cl (MAG OR RARE) !CRAFT !ETH]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
-ItemDisplay[9cl (MAG OR RARE) !CRAFT !ETH]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
-ItemDisplay[7sp (MAG OR RARE) !CRAFT !ETH]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
-ItemDisplay[9sp (MAG OR RARE) !CRAFT !ETH]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
-ItemDisplay[spc (MAG OR RARE) !CRAFT !ETH]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
+ItemDisplay[clb (MAG OR RARE) !CRAFT !ETH FILTLVL=3]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
+ItemDisplay[7cl (MAG OR RARE) !CRAFT !ETH FILTLVL=3]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
+ItemDisplay[9cl (MAG OR RARE) !CRAFT !ETH FILTLVL=3]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
+ItemDisplay[7sp (MAG OR RARE) !CRAFT !ETH FILTLVL=3]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
+ItemDisplay[9sp (MAG OR RARE) !CRAFT !ETH FILTLVL=3]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
+ItemDisplay[spc (MAG OR RARE) !CRAFT !ETH FILTLVL=3]: %DOT-9B%%RED%Craft - %BLUE%%NAME% %RED%- Craft
 
 ItemDisplay[CRAFT]:%NAME%
 
@@ -1192,50 +1194,50 @@ ItemDisplay[SET qui !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Arctic Furs
 ItemDisplay[SET vbl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Arctic Binding
 ItemDisplay[SET tgl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Arctic Mitts
 ItemDisplay[SET swb !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Arctic Horn
-ItemDisplay[SET qui !ID FILTLVL<2]:
-ItemDisplay[SET vbl !ID FILTLVL<2]:
-ItemDisplay[SET tgl !ID FILTLVL<2]:
-ItemDisplay[SET swb !ID FILTLVL<2]:
+ItemDisplay[SET qui !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET vbl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET tgl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET swb !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Hsarus' Defense
 ItemDisplay[SET mbt !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Hsarus' Iron Heel
 ItemDisplay[SET mbl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Hsarus' Iron Stay
 ItemDisplay[SET buc !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Hsarus' Iron Fist
-ItemDisplay[SET mbt !ID FILTLVL<2]:
-ItemDisplay[SET mbl !ID FILTLVL<2]:
-ItemDisplay[SET buc !ID FILTLVL<2]:
+ItemDisplay[SET mbt !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET mbl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET buc !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Berserker's Arsenal
 ItemDisplay[SET hlm !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Berserker's Headgear
 ItemDisplay[SET spl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Berserker's Hauberk
 ItemDisplay[SET 2ax !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Berserker's Hatchet
-ItemDisplay[SET hlm !ID FILTLVL<2]:
-ItemDisplay[SET spl !ID FILTLVL<2]:
-ItemDisplay[SET 2ax !ID FILTLVL<2]:
+ItemDisplay[SET hlm !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET spl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET 2ax !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Cleglaw's Brace
 ItemDisplay[SET mgl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cleglaw's Pincers
 ItemDisplay[SET sml !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cleglaw's Claw
 ItemDisplay[SET lsd !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cleglaw's Tooth
-ItemDisplay[SET mgl !ID FILTLVL<2]:
-ItemDisplay[SET sml !ID FILTLVL<2]:
-ItemDisplay[SET lsd !ID FILTLVL<2]:
+ItemDisplay[SET mgl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET sml !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET lsd !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Infernal Tools
 ItemDisplay[SET cap !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Infernal Cranium
 ItemDisplay[SET tbl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Infernal Sign
 ItemDisplay[SET dgr !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Infernal Spire (Infernal Torch)
-ItemDisplay[SET cap !ID FILTLVL<2]:
-ItemDisplay[SET tbl !ID FILTLVL<2]:
-ItemDisplay[SET dgr !ID FILTLVL<2]:
+ItemDisplay[SET cap !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET tbl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET dgr !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Death's Disguise
 ItemDisplay[SET lbl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Death's Guard
 ItemDisplay[SET lgl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Death's Hand
 ItemDisplay[SET wsd !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Death's Touch
-ItemDisplay[SET lbl !ID FILTLVL<2]:
-ItemDisplay[SET lgl !ID FILTLVL<2]:
-ItemDisplay[SET wsd !ID FILTLVL<2]:
+ItemDisplay[SET lbl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET lgl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET wsd !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Sigon's Complete Steel
 ItemDisplay[SET ghm !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sigon's Visor
@@ -1244,29 +1246,29 @@ ItemDisplay[SET hbt !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sigon's Sabot
 ItemDisplay[SET hbl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sigon's Wrap
 ItemDisplay[SET hgl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sigon's Gage
 ItemDisplay[SET tow !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sigon's Guard
-ItemDisplay[SET ghm !ID FILTLVL<2]:
-ItemDisplay[SET gth !ID FILTLVL<2]:
-ItemDisplay[SET hbt !ID FILTLVL<2]:
-ItemDisplay[SET hbl !ID FILTLVL<2]:
-ItemDisplay[SET hgl !ID FILTLVL<2]:
-ItemDisplay[SET tow !ID FILTLVL<2]:
+ItemDisplay[SET ghm !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET gth !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET hbt !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET hbl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET hgl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET tow !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Isenhart's Armory
 ItemDisplay[SET fhl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Isenhart's Horns
 ItemDisplay[SET brs !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Isenhart's Case
 ItemDisplay[SET gts !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Isenhart's Parry
 ItemDisplay[SET bsd !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Isenhart's Lightbrand
-ItemDisplay[SET fhl !ID FILTLVL<2]:
-ItemDisplay[SET brs !ID FILTLVL<2]:
-ItemDisplay[SET gts !ID FILTLVL<2]:
-ItemDisplay[SET bsd !ID FILTLVL<2]:
+ItemDisplay[SET fhl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET brs !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET gts !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET bsd !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Civerb's Vestments
 ItemDisplay[SET lrg !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Civerb's Ward
 ItemDisplay[SET gsc !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Civerb's Cudgel
 //Civerb's Icon (SET AMU -> will be shown)
-ItemDisplay[SET lrg !ID FILTLVL<2]:
-ItemDisplay[SET gsc !ID FILTLVL<2]:
+ItemDisplay[SET lrg !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET gsc !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Cathan's Traps
 ItemDisplay[SET msk !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cathan's Visage
@@ -1274,54 +1276,54 @@ ItemDisplay[SET chn !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cathan's Mesh
 ItemDisplay[SET bst !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cathan's Rule
 //Cathan's Sigil (SET AMU -> will be shown)
 //Cathan's Seal (SET RING -> Hidden in general section)
-ItemDisplay[SET msk !ID FILTLVL<2]:
-ItemDisplay[SET chn !ID FILTLVL<2]:
-ItemDisplay[SET bst !ID FILTLVL<2]:
+ItemDisplay[SET msk !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET chn !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET bst !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Angelic Raiment
 ItemDisplay[SET rng !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Angelic Mantle
 ItemDisplay[SET sbr !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Angelic Sickle
 //Angelic Wings (SET AMU -> will be shown)
 //Angelic Halo (SET RING -> Hidden in general section)
-ItemDisplay[SET rng !ID FILTLVL<2]:
-ItemDisplay[SET sbr !ID FILTLVL<2]:
+ItemDisplay[SET rng !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET sbr !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Vidala's Rig
 ItemDisplay[SET lea !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Vidala's Ambush
 ItemDisplay[SET tbt !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Vidala's Fetlock
 ItemDisplay[SET lbb !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Vidala's Barb
 //Vidala's Snare (SET AMU -> will be shown)
-ItemDisplay[SET lea !ID FILTLVL<2]:
-ItemDisplay[SET tbt !ID FILTLVL<2]:
-ItemDisplay[SET lbb !ID FILTLVL<2]:
+ItemDisplay[SET lea !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET tbt !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET lbb !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Arcanna's Tricks
 ItemDisplay[SET skp !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Arcanna's Head
 ItemDisplay[SET ltp !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Arcanna's Flesh
 ItemDisplay[SET wst !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Arcanna's Deathwand
 //Arcanna's Sign (SET AMU -> will be shown)
-ItemDisplay[SET skp !ID FILTLVL<2]:
-ItemDisplay[SET ltp !ID FILTLVL<2]:
-ItemDisplay[SET wst !ID FILTLVL<2]:
+ItemDisplay[SET skp !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET ltp !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET wst !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Iratha's Finery
 ItemDisplay[SET crn !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Iratha's Coil
 ItemDisplay[SET tbl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Iratha's Cord
 ItemDisplay[SET tgl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Iratha's Cuff
 //Iratha's Collar (SET AMU -> will be shown)
-ItemDisplay[SET crn !ID FILTLVL<2]:
-ItemDisplay[SET tbl !ID FILTLVL<2]:
-ItemDisplay[SET tgl !ID FILTLVL<2]:
+ItemDisplay[SET crn !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET tbl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET tgl !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Milabrega's Regalia
 ItemDisplay[SET crn !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Milabrega's Diadem
 ItemDisplay[SET aar !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Milabrega's Robe
 ItemDisplay[SET kit !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Milabrega's Orb
 ItemDisplay[SET wsp !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Milabrega's Rod
-ItemDisplay[SET crn !ID FILTLVL<2]:
-ItemDisplay[SET aar !ID FILTLVL<2]:
-ItemDisplay[SET kit !ID FILTLVL<2]:
-ItemDisplay[SET wsp !ID FILTLVL<2]:
+ItemDisplay[SET crn !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET aar !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET kit !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET wsp !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Tancred's Battlegear
 ItemDisplay[SET bhm !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Tancred's Skull
@@ -1329,49 +1331,49 @@ ItemDisplay[SET ful !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Tancred's Spine
 ItemDisplay[SET lbt !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Tancred's Hobnails
 ItemDisplay[SET mpi !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Tancred's Crowbill
 //Tancred's Weird (SET AMU -> will be shown)
-ItemDisplay[SET bhm !ID FILTLVL<2]:
-ItemDisplay[SET ful !ID FILTLVL<2]:
-ItemDisplay[SET lbt !ID FILTLVL<2]:
-ItemDisplay[SET mpi !ID FILTLVL<2]:
+ItemDisplay[SET bhm !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET ful !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET lbt !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET mpi !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 // 10.2 Exceptional Set
 //Cow King's Leathers
 ItemDisplay[SET xap !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cow King's Horns
 ItemDisplay[SET stu !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cow King's Hide
 ItemDisplay[SET vbt !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Cow King's Hooves
-ItemDisplay[SET xap !ID FILTLVL<2]:
-ItemDisplay[SET stu !ID FILTLVL<2]:
-ItemDisplay[SET vbt !ID FILTLVL<2]:
+ItemDisplay[SET xap !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET stu !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET vbt !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Sander's Folly
 ItemDisplay[SET cap !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sander's Paragon
 ItemDisplay[SET vbt !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sander's Riprap
 ItemDisplay[SET vgl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sander's Taboo
 ItemDisplay[SET bwn !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sander's Superstition
-ItemDisplay[SET cap !ID FILTLVL<2]:
-ItemDisplay[SET vbt !ID FILTLVL<2]:
-ItemDisplay[SET vgl !ID FILTLVL<2]:
-ItemDisplay[SET bwn !ID FILTLVL<2]:
+ItemDisplay[SET cap !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET vbt !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET vgl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET bwn !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Hwanin's Majesty
 ItemDisplay[SET xrn !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Hwanin's Splendor
 ItemDisplay[SET xcl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Hwanin's Refuge
 ItemDisplay[SET mbl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Hwanin's Blessing
 ItemDisplay[SET 9vo !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Hwanin's Justice
-ItemDisplay[SET xrn !ID FILTLVL<2]:
-ItemDisplay[SET xcl !ID FILTLVL<2]:
-ItemDisplay[SET mbl !ID FILTLVL<2]:
-ItemDisplay[SET 9vo !ID FILTLVL<2]:
+ItemDisplay[SET xrn !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET xcl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET mbl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET 9vo !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Orphan's Call
 ItemDisplay[SET xhm !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Guillaume's Face
 ItemDisplay[SET ztb !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Wilhelm's Pride
 ItemDisplay[SET xvg !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Magnus' Skin
 ItemDisplay[SET xml !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Whitstan's Guard
-ItemDisplay[SET xhm !ID FILTLVL<2]:
-ItemDisplay[SET ztb !ID FILTLVL<2]:
-ItemDisplay[SET xvg !ID FILTLVL<2]:
-ItemDisplay[SET xml !ID FILTLVL<2]:
+ItemDisplay[SET xhm !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET ztb !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET xvg !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET xml !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //The Disciple
 ItemDisplay[SET uui !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Dark Adherent
@@ -1379,35 +1381,35 @@ ItemDisplay[SET xlb !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Rite of Passage
 ItemDisplay[SET umc !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Credendum
 ItemDisplay[SET ulg !ID]:%NAME% %RED%- Corrupt//Laying of Hands
 //Telling of Beads (SET AMU -> will be shown)
-ItemDisplay[SET uui !ID FILTLVL<2]:
-ItemDisplay[SET xlb !ID FILTLVL<2]:
-ItemDisplay[SET umc !ID FILTLVL<2]:
+ItemDisplay[SET uui !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET xlb !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET umc !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Naj's Ancient Vestige
 ItemDisplay[SET ci0 !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Naj's Circlet
 ItemDisplay[SET ult !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Naj's Light Plate
 ItemDisplay[SET 6cs !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Naj's Puzzler
-ItemDisplay[SET ci0 !ID FILTLVL<2]:
-ItemDisplay[SET ult !ID FILTLVL<2]:
-ItemDisplay[SET 6cs !ID FILTLVL<2]:
+ItemDisplay[SET ci0 !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET ult !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET 6cs !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Sazabi's Grand Tribute
 ItemDisplay[SET xhl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sazabi's Mental Sheath
 ItemDisplay[SET upl !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sazabi's Ghost Liberator
 ItemDisplay[SET 7ls !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Sazabi's Cobalt Redeemer
-ItemDisplay[SET xhl !ID FILTLVL<2]:
-ItemDisplay[SET upl !ID FILTLVL<2]:
-ItemDisplay[SET 7ls !ID FILTLVL<2]:
+ItemDisplay[SET xhl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET upl !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET 7ls !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Heaven's Brethren
 ItemDisplay[SET uhm !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Ondal's Almighty
 ItemDisplay[SET xrs !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Haemosu's Adamant
 ItemDisplay[SET uts !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Taebaek's Glory
 ItemDisplay[SET 7ma !ID FILTLVL=2]:%BLACK%HIDE %NAME%//Dangoon's Teaching
-ItemDisplay[SET uhm !ID FILTLVL<2]:
-ItemDisplay[SET xrs !ID FILTLVL<2]:
-ItemDisplay[SET uts !ID FILTLVL<2]:
-ItemDisplay[SET 7ma !ID FILTLVL<2]:
+ItemDisplay[SET uhm !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET xrs !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET uts !ID (FILTLVL<2 OR FILTLVL>2)]:
+ItemDisplay[SET 7ma !ID (FILTLVL<2 OR FILTLVL>2)]:
 
 //Bul-Kathos' Children
 //Bul-Kathos' Death Band (SET RING -> Hidden in general section)
@@ -1751,22 +1753,22 @@ ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1) !(ARMOR OR WEAPON OR amu OR rin OR aqv 
 ItemDisplay[INF 9sb SOCK=0 !ETH]:%RED%SAMIER! %GREEN%You are wrecking the CAR!
 
 ItemDisplay[(cqv OR aqv) FILTLVL=2]:%BLACK%HIDE %NAME%//hide all bolts and arrows
-ItemDisplay[(cqv OR aqv) FILTLVL<2]://%BLACK%HIDE %NAME%//hide all bolts and arrows
+ItemDisplay[(cqv OR aqv) (FILTLVL<2 OR FILTLVL>2)]://%BLACK%HIDE %NAME%//hide all bolts and arrows
 ItemDisplay[GOLD<5000]://hide gold stacks below 5000
 ItemDisplay[key FILTLVL=2]:%BLACK%HIDE %NAME%//hide keys
-ItemDisplay[key FILTLVL<2]://%BLACK%HIDE %NAME%//hide keys
+ItemDisplay[key (FILTLVL<2 OR FILTLVL>2)]://%BLACK%HIDE %NAME%//hide keys
 ItemDisplay[NMAG !RW WEAPON FILTLVL=2]:%BLACK%HIDE %NAME%
-ItemDisplay[NMAG !RW WEAPON FILTLVL<2]:
+ItemDisplay[NMAG !RW WEAPON (FILTLVL<2 OR FILTLVL>2)]:
 ItemDisplay[NMAG !RW ARMOR FILTLVL=2]:%BLACK%HIDE %NAME%
-ItemDisplay[NMAG !RW ARMOR FILTLVL<2]:
+ItemDisplay[NMAG !RW ARMOR (FILTLVL<2 OR FILTLVL>2)]:
 ItemDisplay[MAG !ID FILTLVL=2]:%BLACK%HIDE %NAME%//hide every not idented magic item
-ItemDisplay[MAG !ID FILTLVL<2]://%BLACK%HIDE %NAME%//hide every not idented magic item
+ItemDisplay[MAG !ID (FILTLVL<2 OR FILTLVL>2)]://%BLACK%HIDE %NAME%//hide every not idented magic item
 ItemDisplay[RARE !ID FILTLVL=2]:%BLACK%HIDE %NAME%//hide every not idented rare item
-ItemDisplay[RARE !ID FILTLVL<2]://%BLACK%HIDE %NAME%//hide every not idented rare item
+ItemDisplay[RARE !ID (FILTLVL<2 OR FILTLVL>2)]://%BLACK%HIDE %NAME%//hide every not idented rare item
 ItemDisplay[SET !ID rin FILTLVL=2]:%BLACK%HIDE %NAME%//hide not idented set rings
-ItemDisplay[SET !ID rin FILTLVL<2]://%BLACK%HIDE %NAME%//hide not idented set rings
+ItemDisplay[SET !ID rin (FILTLVL<2 OR FILTLVL>2)]://%BLACK%HIDE %NAME%//hide not idented set rings
 ItemDisplay[UNI !ID FILTLVL=2]:%BLACK%HIDE %NAME%//hide all other not idented uniques
-ItemDisplay[UNI !ID FILTLVL<2]://hide all other not idented uniques
+ItemDisplay[UNI !ID (FILTLVL<2 OR FILTLVL>2)]://hide all other not idented uniques
 
 ItemDisplay[NMAG !RW (ARMOR or WEAPON)]://hide all white armor or weapon items
 
