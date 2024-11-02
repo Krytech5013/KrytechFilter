@@ -861,32 +861,32 @@ ItemDisplay[rvs]:
 ItemDisplay[GEM<4]://hide all below flawless
 
 //Amethyst
-ItemDisplay[GEMTYPE=1 GEM=4]: %DOT-66%%PURPLE%* %ORANGE%Flawless %PURPLE%Amethyst %PURPLE%*%CONTINUE%
-ItemDisplay[GEMTYPE=1 GEM=5]: %DOT-66%%PURPLE%@ %ORANGE%Perfect %PURPLE%Amethyst %PURPLE%@%CONTINUE%
+ItemDisplay[GEMTYPE=1 GEM=4]: %DOT-66%%PURPLE%* %TEAL%Flawless %PURPLE%Amethyst %PURPLE%*%CONTINUE%
+ItemDisplay[GEMTYPE=1 GEM=5]: %DOT-66%%PURPLE%@ %TEAL%Perfect %PURPLE%Amethyst %PURPLE%@%CONTINUE%
 
 //Diamond
-ItemDisplay[GEMTYPE=2 GEM=4]: %DOT-66%%WHITE%* %ORANGE%Flawless %WHITE%Diamond %WHITE%* %CONTINUE%
-ItemDisplay[GEMTYPE=2 GEM=5]: %DOT-66%%WHITE%@ %ORANGE%Perfect %WHITE%Diamond %WHITE%@ %CONTINUE%
+ItemDisplay[GEMTYPE=2 GEM=4]: %DOT-66%%WHITE%* %TEAL%Flawless %WHITE%Diamond %WHITE%* %CONTINUE%
+ItemDisplay[GEMTYPE=2 GEM=5]: %DOT-66%%WHITE%@ %TEAL%Perfect %WHITE%Diamond %WHITE%@ %CONTINUE%
 
 //Emerald
-ItemDisplay[GEMTYPE=3 GEM=4]: %DOT-66%%GREEN%* %ORANGE%Flawless %GREEN%Emerald %GREEN%*%CONTINUE%
-ItemDisplay[GEMTYPE=3 GEM=5]: %DOT-66%%GREEN%@ %ORANGE%Perfect %GREEN%Emerald %GREEN%@%CONTINUE%
+ItemDisplay[GEMTYPE=3 GEM=4]: %DOT-66%%GREEN%* %TEAL%Flawless %GREEN%Emerald %GREEN%*%CONTINUE%
+ItemDisplay[GEMTYPE=3 GEM=5]: %DOT-66%%GREEN%@ %TEAL%Perfect %GREEN%Emerald %GREEN%@%CONTINUE%
 
 //Ruby
-ItemDisplay[GEMTYPE=4 GEM=4]: %DOT-66%%RED%* %ORANGE%Flawless %RED%Ruby %RED%*%CONTINUE%
-ItemDisplay[GEMTYPE=4 GEM=5]: %DOT-66%%RED%@ %ORANGE%Perfect %RED%Ruby %RED%@%CONTINUE%
+ItemDisplay[GEMTYPE=4 GEM=4]: %DOT-66%%RED%* %TEAL%Flawless %RED%Ruby %RED%*%CONTINUE%
+ItemDisplay[GEMTYPE=4 GEM=5]: %DOT-66%%RED%@ %TEAL%Perfect %RED%Ruby %RED%@%CONTINUE%
 
 //Sapphire
-ItemDisplay[GEMTYPE=5 GEM=4]: %DOT-66%%BLUE%* %ORANGE%Flawless %BLUE%Sapphire %BLUE%*%CONTINUE%
-ItemDisplay[GEMTYPE=5 GEM=5]: %DOT-66%%BLUE%@ %ORANGE%Perfect %BLUE%Sapphire %BLUE%@%CONTINUE%
+ItemDisplay[GEMTYPE=5 GEM=4]: %DOT-66%%BLUE%* %TEAL%Flawless %BLUE%Sapphire %BLUE%*%CONTINUE%
+ItemDisplay[GEMTYPE=5 GEM=5]: %DOT-66%%BLUE%@ %TEAL%Perfect %BLUE%Sapphire %BLUE%@%CONTINUE%
 
 //Topaz
-ItemDisplay[GEMTYPE=6 GEM=4]: %DOT-66%%YELLOW%* %ORANGE%Flawless %YELLOW%Topaz %YELLOW%*%CONTINUE%
-ItemDisplay[GEMTYPE=6 GEM=5]: %DOT-66%%YELLOW%@ %ORANGE%Perfect %YELLOW%Topaz %YELLOW%@%CONTINUE%
+ItemDisplay[GEMTYPE=6 GEM=4]: %DOT-66%%YELLOW%* %TEAL%Flawless %YELLOW%Topaz %YELLOW%*%CONTINUE%
+ItemDisplay[GEMTYPE=6 GEM=5]: %DOT-66%%YELLOW%@ %TEAL%Perfect %YELLOW%Topaz %YELLOW%@%CONTINUE%
 
 //Skull
-ItemDisplay[GEMTYPE=7 GEM=4]: %DOT-66%%GRAY%* %ORANGE%Flawless %GRAY%Skull %GRAY%*%CONTINUE%
-ItemDisplay[GEMTYPE=7 GEM=5]: %DOT-66%%GRAY%@ %ORANGE%Perfect %GRAY%Skull %GRAY%@%CONTINUE%
+ItemDisplay[GEMTYPE=7 GEM=4]: %DOT-66%%GRAY%* %TEAL%Flawless %GRAY%Skull %GRAY%*%CONTINUE%
+ItemDisplay[GEMTYPE=7 GEM=5]: %DOT-66%%GRAY%@ %TEAL%Perfect %GRAY%Skull %GRAY%@%CONTINUE%
 
 // Gem Tooltips
 //Gems Notes
