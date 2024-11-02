@@ -779,9 +779,9 @@ ItemDisplay[bet]: %PX-9D%%GREEN%** %ORANGE%%NAME% %GREEN%**{%TAN%Essence %WHITE%
 ItemDisplay[fed]: %PX-9D%%GREEN%** %ORANGE%%NAME% %GREEN%**{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}
 
 //Uber Trist Keys
-ItemDisplay[pk1]: %PX-9D%%GREEN%** %ORANGE%Key of Terror %GREEN%**{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}
-ItemDisplay[pk2]: %PX-9D%%GREEN%** %ORANGE%Key of Hate %GREEN%**{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}
-ItemDisplay[pk3]: %PX-9D%%GREEN%** %ORANGE%Key of Destruction %GREEN%**{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}
+ItemDisplay[pk1]: %PX-9D%%GREEN%** %ORANGE%Key of Terror %GREEN%** %TAN%x %WHITE%%QTY%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}
+ItemDisplay[pk2]: %PX-9D%%GREEN%** %ORANGE%Key of Hate %GREEN%** %TAN%x %WHITE%%QTY%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}
+ItemDisplay[pk3]: %PX-9D%%GREEN%** %ORANGE%Key of Destruction %GREEN%** %TAN%x %WHITE%%QTY%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}
 
 //Organs
 ItemDisplay[mbr]: %PX-9D%%GREEN%** %ORANGE%%NAME% %GREEN%**{%WHITE%to get %RED%Pandemonium Talisman%NL%%TAN%Note%WHITE%: Cube %ORANGE%ANY %WHITE%3 Organs + %GRAY%key}
@@ -789,7 +789,7 @@ ItemDisplay[bey]: %PX-9D%%GREEN%** %ORANGE%%NAME% %GREEN%**{%WHITE%to get %RED%P
 ItemDisplay[dhn]: %PX-9D%%GREEN%** %ORANGE%%NAME% %GREEN%**{%WHITE%to get %RED%Pandemonium Talisman%NL%%TAN%Note%WHITE%: Cube %ORANGE%ANY %WHITE%3 Organs + %GRAY%key}
 
 //Project Diablo 2 items
-ItemDisplay[wss]: %PX-68%%RED%** %PURPLE%%NAME% %RED% **{%RED%Warning%WHITE%: It can Brick your Item%NL%%TAN%Note%WHITE%: Use it to %RED%Corrupt %WHITE%Item/Map:}
+ItemDisplay[wss]: %PX-68%%RED%** %PURPLE%%NAME% %RED% ** %TAN%x %WHITE%%QTY%{%RED%Warning%WHITE%: It can Brick your Item%NL%%TAN%Note%WHITE%: Use it to %RED%Corrupt %WHITE%Item/Map:}
 ItemDisplay[iwss]: %MAP-0A%%DOT-66%%NAME% %ORANGE%*{%WHITE%Random Event to Your Map%NL%%TAN%Note%WHITE%: Use it to %PURPLE%Add %WHITE%a Guaranteed}
 ItemDisplay[scrb]: %MAP-A9%%NAME% %ORANGE%*{%NAME%}//{%RED%Group Dungeon%NL%%TAN%Note%WHITE%: Cube it with %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Map to Make:}
 ItemDisplay[ubtm]: %MAP-A9%%GRAY%* %NAME% %GRAY%*{%GRAY%(It will create 3 Portals to come back Max 3 Times)%NL%%TAN%Note%WHITE%: Enterence to Uber Tristram}
@@ -1179,6 +1179,8 @@ ItemDisplay[GLOVES RARE !ID]: %PX-68%%NAME%
 ItemDisplay[BELT RARE !NORM !EXC !ID]: %NAME%
 ItemDisplay[BOOTS RARE !ID]: %NAME%
 
+
+
 //show every identified rare item
 ItemDisplay[RARE ID MAPTIER<1]: %NAME%
 
@@ -1479,9 +1481,13 @@ ItemDisplay[UNI !ID cm1]:%BORDER-0E%%RED%<%PURPLE%*%RED%> %ORANGE%Annihilus %RED
 ItemDisplay[UNI !ID cm2]:%BORDER-0E%%RED%<%PURPLE%*%RED%> %ORANGE%Hellfire Torch %RED%<%PURPLE%*%RED%>
 ItemDisplay[UNI !ID cm3]:%DOT-20%%BORDER-0E%%GOLD%Gheed's Fortune %RED%<%PURPLE%*%RED%>
 
-//
+
+//Goldwrap
 ItemDisplay[UNI !ID tbl]: %PX-68%%RED%*%NAME%%RED%*
+//Chance Guards
 ItemDisplay[UNI !ID mgl]: %PX-68%%RED%*%NAME%%RED%*
+
+
 
 // 11.x Identified Uniques
 ItemDisplay[UNI ID cm2]: %NAME%{%TAN%Note%WHITE%: Cube with %GRAY%key %WHITE%to Destroy Into: %ORANGE%Hellfire Ashes} // Hellfire Torch tooltip
@@ -1620,21 +1626,6 @@ ItemDisplay[DIN NMAG !RW RES=27]: %NAME% %LIGHT_GRAY%|%GREEN%27%WHITE%r%LIGHT_GR
 ItemDisplay[DIN NMAG !RW RES=28]: %NAME% %LIGHT_GRAY%|%GREEN%28%WHITE%r%LIGHT_GRAY%|%CONTINUE%
 ItemDisplay[DIN NMAG !RW RES=29]: %NAME% %LIGHT_GRAY%|%GREEN%29%WHITE%r%LIGHT_GRAY%|%CONTINUE%
 ItemDisplay[DIN NMAG !RW RES=30]: %NAME% %LIGHT_GRAY%|%GREEN%30%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=31]: %NAME% %LIGHT_GRAY%|%GREEN%31%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=32]: %NAME% %LIGHT_GRAY%|%GREEN%32%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=33]: %NAME% %LIGHT_GRAY%|%GREEN%33%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=34]: %NAME% %LIGHT_GRAY%|%GREEN%34%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=35]: %NAME% %LIGHT_GRAY%|%GREEN%35%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=36]: %NAME% %LIGHT_GRAY%|%GREEN%36%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=37]: %NAME% %LIGHT_GRAY%|%GREEN%37%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=38]: %NAME% %LIGHT_GRAY%|%GREEN%38%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=39]: %NAME% %LIGHT_GRAY%|%GREEN%39%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=40]: %NAME% %LIGHT_GRAY%|%GREEN%40%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=41]: %NAME% %LIGHT_GRAY%|%GREEN%41%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=42]: %NAME% %LIGHT_GRAY%|%GREEN%42%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=43]: %NAME% %LIGHT_GRAY%|%GREEN%43%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=44]: %NAME% %LIGHT_GRAY%|%GREEN%44%WHITE%r%LIGHT_GRAY%|%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES=45]: %NAME% %LIGHT_GRAY%|%GREEN%45%WHITE%r%LIGHT_GRAY%|%CONTINUE%
 ItemDisplay[DIN NMAG ELT !RW RES>24]: %DOT-68%%NAME%
 //Body Armor
 //BEGIN Body Armor PREP
@@ -1692,10 +1683,13 @@ ItemDisplay[ARMOR ED=6 !BAR !DRU !NEC NMAG ILVL>20]: %GRAY%[%BLUE%6%%GRAY%] %NAM
 ItemDisplay[ARMOR ED=5 !BAR !DRU !NEC NMAG ILVL>20]: %GRAY%[%BLUE%5%%GRAY%] %NAME%%CONTINUE%
 //END Body Armor PREP
 
-//ItemDisplay[CHEST NMAG ELT ETH (SOCK=3 OR SOCK=4) ED>9]: %WHITE%%NAME% %GRAY%[ETH]%TAN%[%WHITE%%SOCKETS%%TAN%]
-//ItemDisplay[CHEST NMAG ELT !ETH (SOCK=3 OR SOCK=4) ED>9]: %WHITE%%NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]
-//ItemDisplay[CHEST NMAG ELT ETH SOCK=0]: %WHITE%%NAME% %GRAY%[ETH]
-//ItemDisplay[CHEST NMAG ELT !ETH SOCK=0 ED>9]: %WHITE%%NAME%
+ItemDisplay[CHEST NMAG ELT (SOCK=0 OR SOCK=3 OR SOCK=4) ED>9]: %DOT-68%%NAME%
+
+//a2 merc weapons
+ItemDisplay[NMAG ETH !RW (SOCK=0 OR SOCK=4 OR SOCK=5) (7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc)]:%DOT-68%%NAME%
+
+//a5 merc weapons
+ItemDisplay[NMAG ETH !RW (SOCK=0 OR SOCK>2) (72h OR 7cm OR 7gs OR 7b7 OR 7fb OR 7gd) ED>9]:%DOT-68%%NAME%
 
 // 13 ##### NonMagic END ##############################################################################################################################
 
