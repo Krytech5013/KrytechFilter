@@ -1686,7 +1686,7 @@ ItemDisplay[ARMOR ED=5 !BAR !DRU !NEC NMAG ILVL>20]: %GRAY%[%BLUE%5%%GRAY%] %NAM
 ItemDisplay[CHEST NMAG ELT (SOCK=0 OR SOCK=3 OR SOCK=4) ED>9]: %DOT-68%%NAME%
 
 //a2 merc weapons
-ItemDisplay[NMAG ETH !RW (SOCK=0 OR SOCK=4 OR SOCK=5) (7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc)]:%DOT-68%%NAME%
+ItemDisplay[NMAG ETH !RW (SOCK=0 OR SOCK=4 OR SOCK=5) (7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) ED>9]:%DOT-68%%NAME%
 
 //a5 merc weapons
 ItemDisplay[NMAG ETH !RW (SOCK=0 OR SOCK>2) (72h OR 7cm OR 7gs OR 7b7 OR 7fb OR 7gd) ED>9]:%DOT-68%%NAME%
