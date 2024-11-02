@@ -922,7 +922,7 @@ ItemDisplay[GEM>0]: %NAME% %WHITE%{%NAME%}
 
 // 6 ##### Rune START ##############################################################################################################################
 
-ItemDisplay[(RUNE>0 AND RUNE<19)]: %PX-68%%ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]%CONTINUE% // El - Ko
+ItemDisplay[(RUNE>0 AND RUNE<19)]: %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]%CONTINUE% // El - Ko
 ItemDisplay[RUNE=19]: %PX-68%%RED%* %ORANGE%%RUNENAME% Rune %RED%* %GRAY%[%WHITE%%RUNENUM%%GRAY%]%CONTINUE% // Fal
 ItemDisplay[RUNE=20]: %DOT-68%%RED%** %ORANGE%%RUNENAME% Rune %RED%** %GRAY%[%WHITE%%RUNENUM%%GRAY%]%CONTINUE% // Lem
 ItemDisplay[RUNE=21]: %DOT-68%%RED%** %ORANGE%%RUNENAME% Rune %RED%** %GRAY%[%WHITE%%RUNENUM%%GRAY%]%CONTINUE% // Pul
