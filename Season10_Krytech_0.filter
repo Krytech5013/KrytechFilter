@@ -4916,7 +4916,7 @@ ItemDisplay[6cb SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Diamond Bow
-ItemDisplay[6s7 NMAG (SOCK=4 OR SOCK=0) !RW]:%NAME%//
+ItemDisplay[6s7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
 ItemDisplay[6s7 NMAG !RW]://
 ItemDisplay[6s7 MAG !ID]://
 ItemDisplay[6s7 RARE !ID]://
@@ -4925,7 +4925,7 @@ ItemDisplay[6s7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Crusader Bow
-ItemDisplay[6l7 NMAG (SOCK=4 OR SOCK=0) !RW]:%NAME%//
+ItemDisplay[6l7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
 ItemDisplay[6l7 NMAG !RW]://
 ItemDisplay[6l7 MAG !ID]://
 ItemDisplay[6l7 RARE !ID]://
@@ -4934,7 +4934,7 @@ ItemDisplay[6l7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Ward Bow
-ItemDisplay[6sw NMAG (SOCK=4 OR SOCK=0) !RW]:%NAME%//
+ItemDisplay[6sw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
 ItemDisplay[6sw NMAG !RW]://
 ItemDisplay[6sw MAG !ID]://
 ItemDisplay[6sw RARE !ID]://
@@ -4943,7 +4943,7 @@ ItemDisplay[6sw SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Hydra Bow
-ItemDisplay[6lw NMAG (SOCK=4 OR SOCK=0) !RW]:%NAME%//
+ItemDisplay[6lw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
 ItemDisplay[6lw NMAG !RW]://
 ItemDisplay[6lw MAG !ID]://
 ItemDisplay[6lw RARE !ID]://
@@ -5020,6 +5020,7 @@ ItemDisplay[8rx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Elite Crossbows
 //Pellet Bow
+ItemDisplay[6lx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
 ItemDisplay[6lx NMAG !RW]://
 ItemDisplay[6lx MAG !ID]://
 ItemDisplay[6lx RARE !ID]://
@@ -5028,6 +5029,7 @@ ItemDisplay[6lx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Gorgon Crossbow
+ItemDisplay[6mx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
 ItemDisplay[6mx NMAG !RW]://
 ItemDisplay[6mx MAG !ID]://
 ItemDisplay[6mx RARE !ID]://
@@ -5036,6 +5038,7 @@ ItemDisplay[6mx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Colossus Crossbow
+ItemDisplay[6hx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
 ItemDisplay[6hx NMAG !RW]://
 ItemDisplay[6hx MAG !ID]://
 ItemDisplay[6hx RARE !ID]://
@@ -5044,6 +5047,7 @@ ItemDisplay[6hx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Demon Crossbow
+ItemDisplay[6rx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
 ItemDisplay[6rx NMAG !RW]://
 ItemDisplay[6rx MAG !ID]://
 ItemDisplay[6rx RARE !ID]://
