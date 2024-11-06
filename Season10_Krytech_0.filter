@@ -50,7 +50,7 @@ Alias[UNIQUE_NOTIFY3]:%BORDER-68%//
 Alias[UNIQUE_PREFIX0]://
 Alias[UNIQUE_PREFIX1]:%RED%1_.-//
 Alias[UNIQUE_PREFIX2]:%RED%2___...---//
-Alias[UNIQUE_PREFIX3]:%RED%3________.......-------//
+Alias[UNIQUE_PREFIX3]:%RED%3_____.....-----//
 
 Alias[UNIQUE0]://
 Alias[UNIQUE1]:%NAME%//
@@ -60,7 +60,7 @@ Alias[UNIQUE3]:%NAME%//
 Alias[UNIQUE_SUFFIX0]://
 Alias[UNIQUE_SUFFIX1]:%RED%-._1//
 Alias[UNIQUE_SUFFIX2]:%RED%---...___2//
-Alias[UNIQUE_SUFFIX3]:%RED%-------.......________3//
+Alias[UNIQUE_SUFFIX3]:%RED%-----....._____3//
 
 //####################################################
 
@@ -72,7 +72,7 @@ Alias[SET_NOTIFY3]:%BORDER-84%//
 Alias[SET_PREFIX0]://
 Alias[SET_PREFIX1]:%RED%1_.-//
 Alias[SET_PREFIX2]:%RED%2___...---//
-Alias[SET_PREFIX3]:%RED%3________.......-------//
+Alias[SET_PREFIX3]:%RED%3_____.....-----//
 
 Alias[SET0]://
 Alias[SET1]:%NAME%//
@@ -82,7 +82,7 @@ Alias[SET3]:%NAME%//
 Alias[SET_SUFFIX0]://
 Alias[SET_SUFFIX1]:%RED%1-._//
 Alias[SET_SUFFIX2]:%RED%---...___2//
-Alias[SET_SUFFIX3]:%RED%-------.......________3//
+Alias[SET_SUFFIX3]:%RED%-----....._____3//
 
 //####################################################
 
