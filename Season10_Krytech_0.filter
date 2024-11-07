@@ -94,7 +94,7 @@ Alias[HYPE_PREFIX1]:%GREEN%@@@.%BLUE%@@@.%PURPLE%@@@.%RED%***
 Alias[HYPE_SUFFIX1]:%RED%***.%PURPLE%@@@.%BLUE%@@@.%GREEN%@@@
 
 Alias[HYPE_PREFIX2]:%GREEN%@...%BLUE%@...%PURPLE%@...%RED%***
-Alias[HYPE_SUFFIX2]:%RED%***.%PURPLE%...@.%BLUE%...@.%GREEN%...@
+Alias[HYPE_SUFFIX2]:%RED%***%PURPLE%...@%BLUE%...@%GREEN%...@
 
 Alias[HYPE_PREFIX3]:
 Alias[HYPE_SUFFIX3]:
@@ -602,7 +602,7 @@ ItemDisplay[(INF OR SUP) NMAG !RW ci1]: Coronet%CONTINUE%
 
 
 //Item color setup
-ItemDisplay[NMAG !RW !ETH !jewf]:%WHITE%%NAME%%CONTINUE%
+ItemDisplay[NMAG MAPTIER>0]:%WHITE%%NAME%%CONTINUE%
 ItemDisplay[UNI]:%GOLD%%NAME%%WHITE%%CONTINUE%
 ItemDisplay[SET]:%GREEN%%NAME%%WHITE%%CONTINUE%
 ItemDisplay[RARE]:%YELLOW%%NAME%%WHITE%%CONTINUE%
@@ -637,6 +637,211 @@ ItemDisplay[ARMOR NORM SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Tal%WHIT
 ItemDisplay[ARMOR EXC SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Lem%WHITE%, Perf O}%CONTINUE%
 ItemDisplay[WEAPON NORM SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Sol%WHITE%, Perf %GREEN%O}%CONTINUE%
 ItemDisplay[WEAPON EXC SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Lum%WHITE%, %ORANGE%Pul%WHITE%, Perf %GREEN%O}%CONTINUE%
+
+//Items which will benefit socket roll chance from upgrading it first
+//from 1 to 2
+//opener
+ItemDisplay[((dgr OR dir OR wnd OR ywn OR 9wn) OR (buc OR xuc)) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1}%CONTINUE%
+//values
+ItemDisplay[((dgr OR dir OR wnd OR ywn OR 9wn) OR (buc OR xuc)) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:%ORANGE%2%WHITE%}%CONTINUE%
+ItemDisplay[((dgr OR dir OR wnd OR ywn OR 9wn) OR (buc OR xuc)) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:%ORANGE%2}%CONTINUE%
+//closer
+ItemDisplay[((dgr OR dir OR wnd OR ywn OR 9wn) OR (buc OR xuc)) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%TAN%]}%CONTINUE%
+//from 2 to 3
+//opener
+ItemDisplay[(((hax OR clb OR mac OR ssd OR scm OR sbr OR flc OR scp OR ktr OR wrb OR axf OR ces) OR (ci0 OR ci1 OR bhm OR xh9 OR qui OR lea OR hla OR stu OR xui OR xea OR xla OR xtu OR scl OR chn OR spl OR plt OR fld OR spk OR xpk OR bsh OR xsh OR (NEC NORM)) STAT360=0) OR sst) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1}%CONTINUE%
+//values
+ItemDisplay[((hax OR clb OR mac OR ssd OR scm OR sbr OR flc OR scp OR ktr OR wrb OR axf OR ces) OR (ci0 OR ci1 OR bhm OR xh9 OR qui OR lea OR hla OR stu OR xui OR xea OR xla OR xtu OR scl OR chn OR spl OR plt OR fld OR spk OR xpk OR bsh OR xsh OR (NEC NORM))) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %TAN%P%WHITE%:2}%CONTINUE%
+ItemDisplay[sst (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:%ORANGE%3%WHITE%}%CONTINUE%
+ItemDisplay[((hax OR clb OR mac OR ssd OR scm OR sbr OR flc OR scp OR ktr OR wrb OR axf OR ces) OR (ci0 OR ci1 OR bhm OR xh9 OR qui OR lea OR hla OR stu OR xui OR xea OR xla OR xtu OR scl OR chn OR spl OR plt OR fld OR spk OR xpk OR bsh OR xsh OR (NEC NORM)) OR sst) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:%ORANGE%3}%CONTINUE%
+//closer
+ItemDisplay[(((hax OR clb OR mac OR ssd OR scm OR sbr OR flc OR scp OR ktr OR wrb OR axf OR ces) OR (ci0 OR ci1 OR bhm OR xh9 OR qui OR lea OR hla OR stu OR xui OR xea OR xla OR xtu OR scl OR chn OR spl OR plt OR fld OR spk OR xpk OR bsh OR xsh OR (NEC NORM)) STAT360=0) OR sst) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%TAN%]}%CONTINUE%
+//from 3 to 4
+//opener
+ItemDisplay[(bar OR sbw OR lxb) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1}%CONTINUE%
+//values
+ItemDisplay[(bar OR sbw OR lxb) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:%ORANGE%4%WHITE%}%CONTINUE%
+ItemDisplay[(bar OR sbw OR lxb) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:%ORANGE%4}%CONTINUE%
+//closer
+ItemDisplay[(bar OR sbw OR lxb) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%TAN%]}%CONTINUE%
+//from 3 to 6
+//opener
+ItemDisplay[spr (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1}%CONTINUE%
+//values
+ItemDisplay[spr (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:%ORANGE%4%WHITE%}%CONTINUE%
+ItemDisplay[spr (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:%ORANGE%6}%CONTINUE%
+//closer
+ItemDisplay[spr (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%TAN%]}%CONTINUE%
+//from 4 to 5
+//opener
+ItemDisplay[lax (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1}%CONTINUE%
+//values
+ItemDisplay[lax (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %TAN%P%WHITE%:4}%CONTINUE%
+ItemDisplay[lax (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:%ORANGE%5}%CONTINUE%
+//closer
+ItemDisplay[lax (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%%TAN%]}%CONTINUE%
+//from 4 to 6
+//opener
+ItemDisplay[9sr (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1}%CONTINUE%
+//values
+ItemDisplay[9sr (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %TAN%P%WHITE%:4}%CONTINUE%
+ItemDisplay[9sr (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:%ORANGE%6}%CONTINUE%
+//closer
+ItemDisplay[9sr (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%%TAN%]}%CONTINUE%
+//from 5 to 6
+//opener
+ItemDisplay[(lbw OR 8lb) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1}%CONTINUE%
+//values
+ItemDisplay[((lbw OR 8lb) ILVL<26) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %TAN%P%WHITE%:%ORANGE%4%WHITE%}%CONTINUE%
+ItemDisplay[((lbw OR 8lb) ILVL>25) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %TAN%P%WHITE%:4}%CONTINUE%
+ItemDisplay[(lbw OR 8lb) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:%ORANGE%6}%CONTINUE%
+//closer
+ItemDisplay[(lbw OR 8lb) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0]: %NAME%{%NAME%%TAN%]}%CONTINUE%
+
+//Info about Max Sockets from all sources of socketing
+//opener
+ItemDisplay[(dgr OR dir OR wnd OR ywn OR 9wn OR (ci0 ILVL<26)) MAG ID SOCK=0]: %NAME%{%NAME%%CL%%WHITE%Max Sockets: %TAN%[%WHITE%L:1}%CONTINUE%
+ItemDisplay[((CHEST OR HELM OR CIRC OR SHIELD) OR WEAPON) !(THROWING OR dgr OR dir OR wnd OR ywn OR 9wn OR (ci0 ILVL<26)) MAG ID SOCK=0]: %NAME%{%NAME%%CL%%WHITE%Max Sockets: %TAN%[%WHITE%L:2}%CONTINUE%
+ItemDisplay[((CHEST OR HELM OR CIRC OR SHIELD) OR WEAPON) !THROWING (RARE OR CRAFT OR UNI OR SET) ID SOCK=0]: %NAME%{%NAME%%CL%%WHITE%Max Sockets: %TAN%[%WHITE%L:1}%CONTINUE%
+ItemDisplay[(dgr OR dir OR wnd OR ywn OR 9wn OR (ci0 ILVL<26) OR buc OR xuc) (RARE OR CRAFT OR UNI OR SET OR MAG) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:1}%CONTINUE%
+ItemDisplay[((CHEST OR HELM OR CIRC OR SHIELD) OR 1H OR hax) !(THROWING OR dgr OR dir OR wnd OR ywn OR 9wn OR (ci0 ILVL<26) OR buc OR xuc) (RARE OR CRAFT OR UNI OR SET OR MAG) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:2}%CONTINUE%
+ItemDisplay[sst (RARE OR CRAFT OR UNI OR SET OR MAG) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:2}%CONTINUE%
+ItemDisplay[(((mau OR gma OR clm OR gis OR bsw OR tri OR brn OR spt OR pik OR vou OR scy OR pax OR hbw OR lbw OR cbw OR sbb OR lbb OR mxb OR hxb OR am1 OR am3) ILVL<26) OR 2hs OR 92h OR 72h OR spr OR bar OR sbw OR lxb OR 8ss OR 6ss OR lst OR 8ls OR 6ls) (RARE OR CRAFT OR UNI OR SET OR MAG) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:3}%CONTINUE%
+ItemDisplay[2H !(THROWING OR (((mau OR gma OR clm OR gis OR bsw OR tri OR brn OR spt OR pik OR vou OR scy OR pax OR hbw OR lbw OR cbw OR sbb OR lbb OR mxb OR hxb OR am1 OR am3) ILVL<26) OR 2hs OR 92h OR 72h OR spr OR bar OR sbw OR lxb OR 8ss OR 6ss OR lst OR 8ls OR 6ls) OR sst) (RARE OR CRAFT OR UNI OR SET OR MAG) ID SOCK=0]: %NAME%{%NAME%, %TAN%P%WHITE%:4}%CONTINUE%
+//corruption values
+//helmets & circlets
+ItemDisplay[ci0 (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:1}%CONTINUE%
+ItemDisplay[ci0 (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+ItemDisplay[(cap OR xap OR uap OR skp OR xkp OR ukp OR hlm OR xlm OR ulm OR fhl OR xhl OR uhl OR bhm OR xh9 OR ci1) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+ItemDisplay[(msk OR ghm OR crn) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<41]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+ItemDisplay[(msk OR ghm OR crn) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>40]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+ItemDisplay[(xsk OR xhm OR xrn OR usk OR uh9 OR uhm OR urn OR ci2 OR ci3) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+//barb helms & dru pelts
+ItemDisplay[(BAR OR DRU) NORM (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+ItemDisplay[(BAR OR DRU) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+//chest
+ItemDisplay[(qui OR lea OR hla OR stu OR xui OR xea OR xla OR xtu OR scl OR chn OR spl OR plt OR fld) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+ItemDisplay[(rng OR xng OR xcl OR xhn OR brs OR xrs OR xpl OR xlt OR xld OR ltp OR xtp) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+ItemDisplay[(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR utp OR uul OR uar OR gth OR ful OR aar OR xth OR xul OR xar) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+//shields
+ItemDisplay[(buc OR xuc) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:1}%CONTINUE%
+ItemDisplay[(uuc OR sml OR xml OR uml OR spk OR xpk OR bsh OR xsh) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+ItemDisplay[(lrg OR xrg OR urg OR upk OR kit OR xit OR ush OR tow OR xow OR gts OR xts) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+ItemDisplay[(uit OR uow OR uts) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+//pala shields
+ItemDisplay[DIN NORM (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+ItemDisplay[DIN (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+//necro shields
+ItemDisplay[NEC NORM (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+ItemDisplay[NEC (EXC OR ELT) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+//Weapons
+//always 1
+ItemDisplay[(dgr OR dir OR wnd OR ywn OR 9wn) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:1}%CONTINUE%
+//always 2
+ItemDisplay[(hax OR clb OR spc OR mac OR ssd OR scm OR sbr OR flc OR 9dg OR 9di OR 7dg OR 7di OR bld OR 9bl OR 7bl OR sst OR (WAND !(wnd OR ywn OR 9wn)) OR scp OR ktr OR wrb OR axf OR ces OR (SOR !(ob5 OR oba OR obf))) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+//always 3
+ItemDisplay[(9ha OR 7ha OR 9cl OR 7cl OR 9sp OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR 9ss OR 9sm OR 9sb OR 9fc OR 7ss OR 7sm OR 7sb OR 7fc OR wsd OR 9wd OR 7wd OR 2hs OR 92h OR 72h OR 9kr OR 7kr OR spr OR bar OR sbw OR lxb OR 8ss OR 6ss OR lst OR 8ls OR 6ls OR 9sc OR 7sc OR gsc OR 9qs OR 7qs OR 7sp OR (SIN !(ktr OR wrb OR axf OR ces OR clw OR btl OR skr)) OR oba OR obf) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+//always 4
+ItemDisplay[(axe OR 9ax OR 7ax OR lax OR 9wh OR 7wh OR 9bs OR 7bs OR 9ls OR 7ls OR 9cm OR 9gs OR 9b9 OR 7cm OR 7gs OR 7b7 OR 9tr OR 7tr OR 9b7 OR 9vo OR 7o7 OR 7vo OR 8sb OR 6sb OR 8hb OR 6hb OR 8cb OR 6cb OR 8lx OR 6lx OR 8mx OR 6mx OR cst OR 8cs OR 6cs OR bst OR 8bs OR 6bs OR 9sr) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+//always 5
+ItemDisplay[(92a OR 72a OR 9la OR 9ba OR 9bt OR 7la OR 7ba OR 7bt OR 9fl OR 7fl OR 9fb OR 7fb OR 9br OR 7br OR 7s8 OR 7pa OR 8s8 OR 8sw OR 6s7 OR 6sw OR 8rx OR 6rx OR 9ws OR 7ws OR amb OR am7 OR amc) 1H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(92a OR 72a OR 9la OR 9ba OR 9bt OR 7la OR 7ba OR 7bt OR 9fl OR 7fl OR 9fb OR 7fb OR 9br OR 7br OR 7s8 OR 7pa OR 8s8 OR 8sw OR 6s7 OR 6sw OR 8rx OR 6rx OR 9ws OR 7ws OR amb OR am7 OR amc) 2H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:5}%CONTINUE%
+//always 6
+ItemDisplay[(9mp OR 9wa OR 7mp OR 7wa OR 9ga OR 9gi OR 7ga OR 7gi OR 9m9 OR 9gm OR 7m7 OR 7gm OR 7cr OR 9gd OR 7gd OR 9st OR 9p9 OR 7st OR 7p7 OR 9h9 OR 9wc OR 7h7 OR 7wc OR 8l8 OR 8lw OR 6l7 OR 6lw OR 8hx OR 6hx OR 8ws OR 6ws OR am8 OR am9 OR amd OR ame) 1H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(9mp OR 9wa OR 7mp OR 7wa OR 9ga OR 9gi OR 7ga OR 7gi OR 9m9 OR 9gm OR 7m7 OR 7gm OR 7cr OR 9gd OR 7gd OR 9st OR 9p9 OR 7st OR 7p7 OR 9h9 OR 9wc OR 7h7 OR 7wc OR 8l8 OR 8lw OR 6l7 OR 6lw OR 8hx OR 6hx OR 8ws OR 6ws OR am8 OR am9 OR amd OR ame OR 7sr) 2H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0]: %NAME%{%NAME%, %RED%C%WHITE%:6}%CONTINUE%
+//varies 2/3/3
+ItemDisplay[(kri OR clw OR btl OR skr OR ob5) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:2}%CONTINUE%
+ItemDisplay[(kri OR clw OR btl OR skr OR ob5) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+//varies 3/4/4
+ItemDisplay[(whm OR bsd OR lsd OR clm OR gis OR bsw OR tri OR vou OR hbw OR cbw OR mxb) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+ItemDisplay[(whm OR bsd OR lsd OR clm OR gis OR bsw OR tri OR vou OR hbw OR cbw OR mxb) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+//varies 3/4/5
+ItemDisplay[(fla OR flb OR brn OR scy OR pax OR 9s8 OR 9pa OR lbw OR 8lb OR sbb OR swb OR am1 OR am2 OR am6 OR rxb) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+ItemDisplay[(fla OR flb OR brn OR scy OR pax OR 9s8 OR 9pa OR lbw OR 8lb OR sbb OR swb OR am1 OR am2 OR am6 OR rxb) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 (ILVL>25 AND ILVL<41)]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(fla OR flb OR brn OR scy OR pax OR 9s8 OR 9pa OR lbw OR 8lb OR sbb OR swb OR am1 OR am2 OR am6 OR rxb) 1H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>40]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(fla OR flb OR brn OR scy OR pax OR 9s8 OR 9pa OR lbw OR 8lb OR sbb OR swb OR am1 OR am2 OR am6 OR rxb) 2H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>40]: %NAME%{%NAME%, %RED%C%WHITE%:5}%CONTINUE%
+//varies 3/4/6
+ItemDisplay[(mau OR gma OR crs OR 9cr OR gsd OR spt OR pik OR hal OR wsc OR lbb OR lwb OR hxb OR am3 OR am4 OR 6lb) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+ItemDisplay[(mau OR gma OR crs OR 9cr OR gsd OR spt OR pik OR hal OR wsc OR lbb OR lwb OR hxb OR am3 OR am4 OR 6lb) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 (ILVL>25 AND ILVL<41)]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(mau OR gma OR crs OR 9cr OR gsd OR spt OR pik OR hal OR wsc OR lbb OR lwb OR hxb OR am3 OR am4 OR 6lb) 1H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>40]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(mau OR gma OR crs OR 9cr OR gsd OR spt OR pik OR hal OR wsc OR lbb OR lwb OR hxb OR am3 OR am4 OR 6lb) 2H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>40]: %NAME%{%NAME%, %RED%C%WHITE%:6}%CONTINUE%
+//varies 3/5/5
+ItemDisplay[wsp (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:3}%CONTINUE%
+ItemDisplay[wsp (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+//varies 4/5/5
+ItemDisplay[(2ax OR bax OR btx) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(2ax OR bax OR btx) 1H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(2ax OR bax OR btx) 2H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:5}%CONTINUE%
+//varies 4/5/6
+ItemDisplay[(mpi OR wax OR gax OR gix) (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(mpi OR wax OR gax OR gix) 1H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 (ILVL>25 AND ILVL<41)]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(mpi OR wax OR gax OR gix) 2H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 (ILVL>25 AND ILVL<41)]: %NAME%{%NAME%, %RED%C%WHITE%:5}%CONTINUE%
+ItemDisplay[(mpi OR wax OR gax OR gix) 1H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>40]: %NAME%{%NAME%, %RED%C%WHITE%:4}%CONTINUE%
+ItemDisplay[(mpi OR wax OR gax OR gix) 2H (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>40]: %NAME%{%NAME%, %RED%C%WHITE%:6}%CONTINUE%
+//varies 5/6/6
+ItemDisplay[wst (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL<26]: %NAME%{%NAME%, %RED%C%WHITE%:5}%CONTINUE%
+ItemDisplay[wst (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]: %NAME%{%NAME%, %RED%C%WHITE%:6}%CONTINUE%
+//closer
+ItemDisplay[((CHEST OR HELM OR CIRC OR SHIELD) OR WEAPON) !THROWING (RARE OR CRAFT OR UNI OR SET OR MAG) ID SOCK=0]: %NAME%{%NAME%%TAN%]}%CONTINUE%
+
+//Shop Hunting / Good Items Highlighting
+ItemDisplay[WEAPON (MAG OR RARE OR CRAFT) (ED>249 AND (SUFFIX=662 OR SUFFIX=898 OR SUFFIX=899)) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%High ED %ORANGE%High Amp %GREEN%CTC Weapon%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[WEAPON (MAG OR RARE OR CRAFT) ED>399 STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%High ED Weapon%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[WEAPON (MAG OR RARE OR CRAFT) TABSK34>2 STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Warcries Weapon%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SIN (MAG OR RARE OR CRAFT) TABSK49>2 STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Shadow Disciplines Claws%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SIN (MAG OR RARE OR CRAFT) ((TABSK49>1 OR CLSK6>1) AND SK278>1) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Venom Claws%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SIN (MAG OR RARE OR CRAFT) ((TABSK49>1 OR CLSK6>1) AND SK273>1) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Mind Blast Claws%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SIN (MAG OR RARE OR CRAFT) (TABSK50>2 OR ((TABSK50>1 OR CLSK6>1) AND (SK280>1 OR SK265>1 OR SK274>1))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Martial Arts Claws%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SIN (MAG OR RARE OR CRAFT) (TABSK48>2 OR (((TABSK48>1 OR CLSK6>1) OR ((TABSK48>0 OR CLSK6>0) AND ALLSK>0)) AND (SK366>1 OR SK276>1 OR SK272>1 OR SK271>1 OR SK262>1))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Traps Claws%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SIN (MAG OR RARE OR CRAFT) (TABSK48>2 OR (((TABSK48>1 OR CLSK6>1) OR ((TABSK48>0 OR CLSK6>0) AND ALLSK>0)) AND (SK257>1 OR SK266>1 OR SK277>1))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %ORANGE%Blade Claws%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[GLOVES (MAG OR RARE OR CRAFT) (TABSK0>2 OR TABSK2>2 OR TABSK50>2) AND IAS>19 STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%3sk, 20ias Gloves%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[GLOVES (MAG OR RARE OR CRAFT) (TABSK1>2 AND FCR>9) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%3sk, 10fcr Gloves%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SCEPTER (MAG OR RARE OR CRAFT) ((TABSK24>2 AND SK101>1) OR (TABSK24>1 AND SK101>2) OR (CLSK3>1 AND SK101>2)) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Holy Bolt Scepter%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SCEPTER (MAG OR RARE OR CRAFT) ((TABSK24>2 AND SK121>1) OR (TABSK24>1 AND SK121>2) OR (CLSK3>1 AND SK121>2)) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%FoH Scepter%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[SCEPTER (MAG OR RARE OR CRAFT) ((TABSK25>2 AND SK118>1) OR (TABSK25>1 AND SK118>2) OR (CLSK3>1 AND SK118>2)) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Holy Shock Scepter%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[WAND (MAG OR RARE OR CRAFT) ((TABSK18>2 AND (SK70>1 OR SK75>1 OR SK80>1 OR SK85>1 OR SK89>1 OR SK90>1 OR SK94>1 OR SK95>1)) OR ((TABSK18>1 OR CLSK2>1) AND (SK70>2 OR SK75>2 OR SK80>2 OR SK85>2 OR SK89>2 OR SK90>2 OR SK94>2 OR SK95>2))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Summoner Wand%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[NEC (MAG OR RARE OR CRAFT) ((TABSK18>2 AND (SK70>1 OR SK75>1 OR SK80>1 OR SK85>1 OR SK89>1 OR SK90>1 OR SK94>1 OR SK95>1)) OR ((TABSK18>1 OR CLSK2>1) AND (SK70>2 OR SK75>2 OR SK80>2 OR SK85>2 OR SK89>2 OR SK90>2 OR SK94>2 OR SK95>2))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Summoner Head%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%**}
+//
+ItemDisplay[WAND (MAG OR RARE OR CRAFT) ((TABSK16>2 AND SK381>1) OR ((TABSK16>1 OR CLSK2>1) AND SK381>2)) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Dark Pact Wand%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[NEC (MAG OR RARE OR CRAFT) ((TABSK16>2 AND SK381>1) OR ((TABSK16>1 OR CLSK2>1) AND SK381>2)) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Dark Pact Head%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%**}
+//
+ItemDisplay[WAND (MAG OR RARE OR CRAFT) ((TABSK17>2 AND (SK92>1 OR SK83>1)) OR ((TABSK17>1 OR CLSK2>1) AND (SK92>2 OR SK83>2))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Poison Spells Wand%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[NEC (MAG OR RARE OR CRAFT) ((TABSK17>2 AND (SK92>1 OR SK83>1)) OR ((TABSK17>1 OR CLSK2>1) AND (SK92>2 OR SK83>2 OR SK73>2))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Poison Spells Head%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%**}
+//
+ItemDisplay[WAND (MAG OR RARE OR CRAFT) ((TABSK17>2 AND (SK93>1 OR SK84>1 OR SK67>1)) OR ((TABSK17>1 OR CLSK2>1) AND (SK93>2 OR SK84>2 OR SK67>2))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Bone Spells Wand%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[NEC (MAG OR RARE OR CRAFT) ((TABSK17>2 AND (SK93>1 OR SK84>1 OR SK67>1)) OR ((TABSK17>1 OR CLSK2>1) AND (SK93>2 OR SK84>2 OR SK67>2))) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Bone Spells Head%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%**}
+//
+ItemDisplay[WAND (MAG OR RARE OR CRAFT) ((TABSK17>2 AND SK74>1) OR ((TABSK17>1 OR CLSK2>1) AND SK74>2)) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Corpse Explosion Wand%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[NEC (MAG OR RARE OR CRAFT) ((TABSK17>2 AND SK74>1) OR ((TABSK17>1 OR CLSK2>1) AND SK74>2)) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Corpse Explosion Head%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%**}
+//
+ItemDisplay[STAFF (MAG OR RARE OR CRAFT) CHSK54>0 STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %GREEN%Teleport Charges%RED%   ***%CL%%GREEN%***%RED%***   %TAN%Note%WHITE%: Notice me, That's me:   %RED%***%GREEN%***}
+//
+ItemDisplay[WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=909 OR SUFFIX=912) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %LIGHT_GRAY%High %PURPLE%Lower Resist %GREEN%CTC %LIGHT_GRAY%Proc%RED%   ***%CL%%DARK_GREEN%*%GRAY%*   %TAN%Note%WHITE%: Notice me, That's me:   %GRAY%*%DARK_GREEN%*}
+//
+ItemDisplay[WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=899 OR SUFFIX=906) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %LIGHT_GRAY%High %ORANGE%Amplify Damage %GREEN%CTC %LIGHT_GRAY%Proc%RED%   ***%CL%%DARK_GREEN%*%GRAY%*   %TAN%Note%WHITE%: Notice me, That's me:   %GRAY%*%DARK_GREEN%*}
+//
+ItemDisplay[WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=594 OR SUFFIX=595) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %DARK_GREEN%Lower Resist Charges%RED%   ***%CL%%DARK_GREEN%*%GRAY%*    %TAN%Note%WHITE%: Notice me, That's me:   %GRAY%*%DARK_GREEN%*}
+//
+ItemDisplay[WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=578 OR SUFFIX=579) STAT360=0]: %NAME%{%NAME%%CL%%RED%***   %DARK_GREEN%Life Tap Charges%RED%   ***%CL%%DARK_GREEN%*%GRAY%*    %TAN%Note%WHITE%: Notice me, That's me:   %GRAY%*%DARK_GREEN%*}
 
 
 //Gheeds Event
@@ -1250,11 +1455,11 @@ ItemDisplay[t62]:%NAME%//
 //Boss Reagents Start ##############################################################################################
 //Uber Tristram
 //Key of Terror
-ItemDisplay[pk1]:%PX-9D%%GREEN%** %ORANGE%Key of Terror %GREEN%** %TAN%x %WHITE%%QTY%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}//
+ItemDisplay[pk1]:%PX-9D%%GREEN%** %ORANGE%Key of Terror %GREEN%** %TAN%x %GREEN%%QTY%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}//
 //Key of Hate
-ItemDisplay[pk2]:%PX-9D%%GREEN%** %ORANGE%Key of Hate %GREEN%** %TAN%x %WHITE%%QTY%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}//
+ItemDisplay[pk2]:%PX-9D%%GREEN%** %ORANGE%Key of Hate %GREEN%** %TAN%x %GREEN%%QTY%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}//
 //Key of Destruction
-ItemDisplay[pk3]:%PX-9D%%GREEN%** %ORANGE%Key of Destruction %GREEN%** %TAN%x %WHITE%%QTY%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}//
+ItemDisplay[pk3]:%PX-9D%%GREEN%** %ORANGE%Key of Destruction %GREEN%** %TAN%x %GREEN%%QTY%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}//
 //Diablo's Horn
 ItemDisplay[dhn]:%PX-9D%%GREEN%** %ORANGE%%NAME% %GREEN%**{%WHITE%to get %RED%Pandemonium Talisman%NL%%TAN%Note%WHITE%: Cube %ORANGE%ANY %WHITE%3 Organs + %GRAY%key}//
 //Baal's Eye
