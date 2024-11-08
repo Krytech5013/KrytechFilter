@@ -56,9 +56,9 @@ Alias[UNIQUE_PREFIX2]:%RED%2___...---//
 Alias[UNIQUE_PREFIX3]:%RED%3_____.....-----//
 
 Alias[UNIQUE0]://
-Alias[UNIQUE1]:%NAME%//
-Alias[UNIQUE2]:%NAME%//
-Alias[UNIQUE3]:%NAME%//
+Alias[UNIQUE1]:%NAME%{%NAME%}//
+Alias[UNIQUE2]:%NAME%{%NAME%}//
+Alias[UNIQUE3]:%NAME%{%NAME%}//
 
 Alias[UNIQUE_SUFFIX0]://
 Alias[UNIQUE_SUFFIX1]:%RED%-._1//
@@ -78,9 +78,9 @@ Alias[SET_PREFIX2]:%RED%2___...---//
 Alias[SET_PREFIX3]:%RED%3_____.....-----//
 
 Alias[SET0]://
-Alias[SET1]:%NAME%//
-Alias[SET2]:%NAME%//
-Alias[SET3]:%NAME%//
+Alias[SET1]:%NAME%{%NAME%}//
+Alias[SET2]:%NAME%{%NAME%}//
+Alias[SET3]:%NAME%{%NAME%}//
 
 Alias[SET_SUFFIX0]://
 Alias[SET_SUFFIX1]:%RED%-._1//
@@ -641,6 +641,12 @@ ItemDisplay[ARMOR EXC SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Ko%WHITE%
 ItemDisplay[WEAPON NORM SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Sol%WHITE%, Perf %GREEN%O}%CONTINUE%
 ItemDisplay[WEAPON EXC SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Lum%WHITE%, %ORANGE%Pul%WHITE%, Perf %GREEN%O}%CONTINUE%
 
+//Notes about socketing recipes
+ItemDisplay[CHEST !INF !SUP SOCK=0 NMAG]: %NAME%{%WHITE%This Item, %ORANGE%Tal%WHITE%, %ORANGE%Thul%WHITE%, Perf %YELLOW%O%CL%%TAN%Note%WHITE%: Socketing Recipe:}%CONTINUE%
+ItemDisplay[(WEAPON AND !THROWING) !INF !SUP SOCK=0 NMAG]: %NAME%{%WHITE%This Item, %ORANGE%Ral%WHITE%, %ORANGE%Amn%WHITE%, Perf %PURPLE%O%CL%%TAN%Note%WHITE%: Socketing Recipe:}%CONTINUE%
+ItemDisplay[(HELM OR CIRC) !INF !SUP SOCK=0 NMAG]: %NAME%{%NAME%%WHITE%This Item, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %BLUE%O%CL%%TAN%Note%WHITE%: Socketing Recipe:}%CONTINUE%
+ItemDisplay[SHIELD !INF !SUP SOCK=0 NMAG]: %NAME%{%WHITE%This Item, %ORANGE%Tal%WHITE%, %ORANGE%Amn%WHITE%, Perf %RED%O%CL%%TAN%Note%WHITE%: Socketing Recipe:}%CONTINUE%
+
 //Items which will benefit socket roll chance from upgrading it first
 //from 1 to 2
 //opener
@@ -1023,51 +1029,51 @@ ItemDisplay[NMAG !ID SHOP MAPID>132]: %NAME%%NL%%NL%%TAN%Note%WHITE%: Possible U
 
 //Quest Start ##############################################################################################
 //Scroll of Inifuss
-ItemDisplay[bks]:%NAME%//
+ItemDisplay[bks]:%NAME%{%NAME%}//
 //Key to the Cairn Stones
-ItemDisplay[bkd]:%NAME%//
+ItemDisplay[bkd]:%NAME%{%NAME%}//
 //Horadric Scroll
-ItemDisplay[tr1]:%NAME%//
+ItemDisplay[tr1]:%NAME%{%NAME%}//
 //Book of Skill
 ItemDisplay[ass]:%GOLD%Book of Skill//
 //Horadric Cube
-ItemDisplay[box]:%NAME%//
+ItemDisplay[box]:%NAME%{%NAME%}//
 //Jade Figurine
-ItemDisplay[j34]:%NAME%//
+ItemDisplay[j34]:%NAME%{%NAME%}//
 //Golden Bird
-ItemDisplay[g34]:%NAME%//
+ItemDisplay[g34]:%NAME%{%NAME%}//
 //Potion of Life
 ItemDisplay[xyz]:%GOLD%Potion of Life//
 //Lam Esen's Tome
-ItemDisplay[bbb]:%NAME%//
+ItemDisplay[bbb]:%NAME%{%NAME%}//
 //Khalim's Brain
-ItemDisplay[qbr]:%NAME%//
+ItemDisplay[qbr]:%NAME%{%NAME%}//
 //Khalim's Eye
-ItemDisplay[qey]:%NAME%//
+ItemDisplay[qey]:%NAME%{%NAME%}//
 //Khalim's Heart
-ItemDisplay[qhr]:%NAME%//
+ItemDisplay[qhr]:%NAME%{%NAME%}//
 //Mephisto's Soulstone
-ItemDisplay[mss]:%NAME%//
+ItemDisplay[mss]:%NAME%{%NAME%}//
 //Malah's Potion
 ItemDisplay[ice]:%GOLD%Malah's Potion//
 //Scroll of Resistance
 ItemDisplay[tr2]:%GOLD%Scroll of Resistance//
 //Horadric Malus
-ItemDisplay[hdm]:%NAME%//
+ItemDisplay[hdm]:%NAME%{%NAME%}//
 //Staff of Kings
-ItemDisplay[msf]:%NAME%//
+ItemDisplay[msf]:%NAME%{%NAME%}//
 //Viper Amulet
-ItemDisplay[vip]:%NAME%//
+ItemDisplay[vip]:%NAME%{%NAME%}//
 //Horadric Staff
-ItemDisplay[hst]:%NAME%//
+ItemDisplay[hst]:%NAME%{%NAME%}//
 //Gidbinn
-ItemDisplay[g33]:%NAME%//
+ItemDisplay[g33]:%NAME%{%NAME%}//
 //Khalim's Flail
-ItemDisplay[qf1]:%NAME%//
+ItemDisplay[qf1]:%NAME%{%NAME%}//
 //Khalim's Will
-ItemDisplay[qf2]:%NAME%//
+ItemDisplay[qf2]:%NAME%{%NAME%}//
 //Khalim's Will
-ItemDisplay[hfh]:%NAME%//
+ItemDisplay[hfh]:%NAME%{%NAME%}//
 //Quest End ##############################################################################################
 
 //Potions Start ##############################################################################################
@@ -1121,40 +1127,40 @@ ItemDisplay[mp5]:%BLUE%M%WHITE%5//
 
 //Throwing Potions
 //Fulminating Potion
-ItemDisplay[tpfs CLVL<24]:%NAME%//
+ItemDisplay[tpfs CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpfs]://
 //Exploding Potion
-ItemDisplay[tpfm CLVL<24]:%NAME%//
+ItemDisplay[tpfm CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpfm]://
 //Oil Potion
-ItemDisplay[tpfl CLVL<24]:%NAME%//
+ItemDisplay[tpfl CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpfl]://
 //Strangling Potion
-ItemDisplay[tpgs CLVL<24]:%NAME%//
+ItemDisplay[tpgs CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpgs]://
 //Choking Potion
-ItemDisplay[tpgm CLVL<24]:%NAME%//
+ItemDisplay[tpgm CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpgm]://
 //Rancid Potion
-ItemDisplay[tpgl CLVL<24]:%NAME%//
+ItemDisplay[tpgl CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpgl]://
 //Chilling Potion
-ItemDisplay[tpcs CLVL<24]:%NAME%//
+ItemDisplay[tpcs CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpcs]://
 //Frost Potion
-ItemDisplay[tpcm CLVL<24]:%NAME%//
+ItemDisplay[tpcm CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpcm]://
 //Freezing Potion
-ItemDisplay[tpcl CLVL<24]:%NAME%//
+ItemDisplay[tpcl CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpcl]://
 //Charged Potion
-ItemDisplay[tpls CLVL<24]:%NAME%//
+ItemDisplay[tpls CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpls]://
 //Static Potion
-ItemDisplay[tplm CLVL<24]:%NAME%//
+ItemDisplay[tplm CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tplm]://
 //Shock Potion
-ItemDisplay[tpll CLVL<24]:%NAME%//
+ItemDisplay[tpll CLVL<24]:%NAME%{%NAME%}//
 ItemDisplay[tpll]://
 //Potions End ##############################################################################################
 
@@ -1215,9 +1221,9 @@ ItemDisplay[RUNE>0]:%NAME%%ORANGE%{%TAN%Control%WHITE%+%TAN%Shift %WHITE%click t
 
 //Gems Start ##############################################################################################
 //Amethyst
-ItemDisplay[GEMTYPE=1 GEM=1 CLVL<20]:%NAME%//chipped
-ItemDisplay[GEMTYPE=1 GEM=2 CLVL<20]:%NAME%//flawed
-ItemDisplay[GEMTYPE=1 GEM=3 CLVL<20]:%NAME%//normal
+ItemDisplay[GEMTYPE=1 GEM=1 CLVL<20]:%NAME%{%NAME%}//chipped
+ItemDisplay[GEMTYPE=1 GEM=2 CLVL<20]:%NAME%{%NAME%}//flawed
+ItemDisplay[GEMTYPE=1 GEM=3 CLVL<20]:%NAME%{%NAME%}//normal
 ItemDisplay[GEMTYPE=1 GEM=1]://chipped
 ItemDisplay[GEMTYPE=1 GEM=2]://flawed
 ItemDisplay[GEMTYPE=1 GEM=3]://normal
@@ -1225,9 +1231,9 @@ ItemDisplay[GEMTYPE=1 GEM=4]:%GEM_NOTIFY_FLAWLESS%%PURPLE%* %TEAL%Flawless %PURP
 ItemDisplay[GEMTYPE=1 GEM=5]:%GEM_NOTIFY_PERFECT%%PURPLE%@ %TEAL%Perfect %PURPLE%Amethyst %PURPLE%@%CONTINUE%
 
 //Diamond
-ItemDisplay[GEMTYPE=2 GEM=1 CLVL<20]:%NAME%//chipped
-ItemDisplay[GEMTYPE=2 GEM=2 CLVL<20]:%NAME%//flawed
-ItemDisplay[GEMTYPE=2 GEM=3 CLVL<20]:%NAME%//normal
+ItemDisplay[GEMTYPE=2 GEM=1 CLVL<20]:%NAME%{%NAME%}//chipped
+ItemDisplay[GEMTYPE=2 GEM=2 CLVL<20]:%NAME%{%NAME%}//flawed
+ItemDisplay[GEMTYPE=2 GEM=3 CLVL<20]:%NAME%{%NAME%}//normal
 ItemDisplay[GEMTYPE=2 GEM=1]://chipped
 ItemDisplay[GEMTYPE=2 GEM=2]://flawed
 ItemDisplay[GEMTYPE=2 GEM=3]://normal
@@ -1235,9 +1241,9 @@ ItemDisplay[GEMTYPE=2 GEM=4]:%GEM_NOTIFY_FLAWLESS%%WHITE%* %TEAL%Flawless %WHITE
 ItemDisplay[GEMTYPE=2 GEM=5]:%GEM_NOTIFY_PERFECT%%WHITE%@ %TEAL%Perfect %WHITE%Diamond %WHITE%@ %CONTINUE%
 
 //Emerald
-ItemDisplay[GEMTYPE=3 GEM=1 CLVL<20]:%NAME%//chipped
-ItemDisplay[GEMTYPE=3 GEM=2 CLVL<20]:%NAME%//flawed
-ItemDisplay[GEMTYPE=3 GEM=3 CLVL<20]:%NAME%//normal
+ItemDisplay[GEMTYPE=3 GEM=1 CLVL<20]:%NAME%{%NAME%}//chipped
+ItemDisplay[GEMTYPE=3 GEM=2 CLVL<20]:%NAME%{%NAME%}//flawed
+ItemDisplay[GEMTYPE=3 GEM=3 CLVL<20]:%NAME%{%NAME%}//normal
 ItemDisplay[GEMTYPE=3 GEM=1]://chipped
 ItemDisplay[GEMTYPE=3 GEM=2]://flawed
 ItemDisplay[GEMTYPE=3 GEM=3]://normal
@@ -1245,9 +1251,9 @@ ItemDisplay[GEMTYPE=3 GEM=4]:%GEM_NOTIFY_FLAWLESS%%GREEN%* %TEAL%Flawless %GREEN
 ItemDisplay[GEMTYPE=3 GEM=5]:%GEM_NOTIFY_PERFECT%%GREEN%@ %TEAL%Perfect %GREEN%Emerald %GREEN%@%CONTINUE%
 
 //Ruby
-ItemDisplay[GEMTYPE=4 GEM=1 CLVL<20]:%NAME%//chipped
-ItemDisplay[GEMTYPE=4 GEM=2 CLVL<20]:%NAME%//flawed
-ItemDisplay[GEMTYPE=4 GEM=3 CLVL<20]:%NAME%//normal
+ItemDisplay[GEMTYPE=4 GEM=1 CLVL<20]:%NAME%{%NAME%}//chipped
+ItemDisplay[GEMTYPE=4 GEM=2 CLVL<20]:%NAME%{%NAME%}//flawed
+ItemDisplay[GEMTYPE=4 GEM=3 CLVL<20]:%NAME%{%NAME%}//normal
 ItemDisplay[GEMTYPE=4 GEM=1]://chipped
 ItemDisplay[GEMTYPE=4 GEM=2]://flawed
 ItemDisplay[GEMTYPE=4 GEM=3]://normal
@@ -1255,9 +1261,9 @@ ItemDisplay[GEMTYPE=4 GEM=4]:%GEM_NOTIFY_FLAWLESS%%RED%* %TEAL%Flawless %RED%Rub
 ItemDisplay[GEMTYPE=4 GEM=5]:%GEM_NOTIFY_PERFECT%%RED%@ %TEAL%Perfect %RED%Ruby %RED%@%CONTINUE%
 
 //Sapphire
-ItemDisplay[GEMTYPE=5 GEM=1 CLVL<20]:%NAME%//chipped
-ItemDisplay[GEMTYPE=5 GEM=2 CLVL<20]:%NAME%//flawed
-ItemDisplay[GEMTYPE=5 GEM=3 CLVL<20]:%NAME%//normal
+ItemDisplay[GEMTYPE=5 GEM=1 CLVL<20]:%NAME%{%NAME%}//chipped
+ItemDisplay[GEMTYPE=5 GEM=2 CLVL<20]:%NAME%{%NAME%}//flawed
+ItemDisplay[GEMTYPE=5 GEM=3 CLVL<20]:%NAME%{%NAME%}//normal
 ItemDisplay[GEMTYPE=5 GEM=1]://chipped
 ItemDisplay[GEMTYPE=5 GEM=2]://flawed
 ItemDisplay[GEMTYPE=5 GEM=3]://normal
@@ -1265,9 +1271,9 @@ ItemDisplay[GEMTYPE=5 GEM=4]:%GEM_NOTIFY_FLAWLESS%%BLUE%* %TEAL%Flawless %BLUE%S
 ItemDisplay[GEMTYPE=5 GEM=5]:%GEM_NOTIFY_PERFECT%%BLUE%@ %TEAL%Perfect %BLUE%Sapphire %BLUE%@%CONTINUE%
 
 //Topaz
-ItemDisplay[GEMTYPE=6 GEM=1 CLVL<20]:%NAME%//chipped
-ItemDisplay[GEMTYPE=6 GEM=2 CLVL<20]:%NAME%//flawed
-ItemDisplay[GEMTYPE=6 GEM=3 CLVL<20]:%NAME%//normal
+ItemDisplay[GEMTYPE=6 GEM=1 CLVL<20]:%NAME%{%NAME%}//chipped
+ItemDisplay[GEMTYPE=6 GEM=2 CLVL<20]:%NAME%{%NAME%}//flawed
+ItemDisplay[GEMTYPE=6 GEM=3 CLVL<20]:%NAME%{%NAME%}//normal
 ItemDisplay[GEMTYPE=6 GEM=1]://chipped
 ItemDisplay[GEMTYPE=6 GEM=2]://flawed
 ItemDisplay[GEMTYPE=6 GEM=3]://normal
@@ -1275,9 +1281,9 @@ ItemDisplay[GEMTYPE=6 GEM=4]:%GEM_NOTIFY_FLAWLESS%%YELLOW%* %TEAL%Flawless %YELL
 ItemDisplay[GEMTYPE=6 GEM=5]:%GEM_NOTIFY_PERFECT%%YELLOW%@ %TEAL%Perfect %YELLOW%Topaz %YELLOW%@%CONTINUE%
 
 //Skull
-ItemDisplay[GEMTYPE=7 GEM=1 CLVL<20]:%NAME%//chipped
-ItemDisplay[GEMTYPE=7 GEM=2 CLVL<20]:%NAME%//flawed
-ItemDisplay[GEMTYPE=7 GEM=3 CLVL<20]:%NAME%//normal
+ItemDisplay[GEMTYPE=7 GEM=1 CLVL<20]:%NAME%{%NAME%}//chipped
+ItemDisplay[GEMTYPE=7 GEM=2 CLVL<20]:%NAME%{%NAME%}//flawed
+ItemDisplay[GEMTYPE=7 GEM=3 CLVL<20]:%NAME%{%NAME%}//normal
 ItemDisplay[GEMTYPE=7 GEM=1]://chipped
 ItemDisplay[GEMTYPE=7 GEM=2]://flawed
 ItemDisplay[GEMTYPE=7 GEM=3]://normal
@@ -1448,9 +1454,9 @@ ItemDisplay[t52]:%NAME%{%WHITE%Immunes: %GRAY%Immune-Free Zone%NAME%}
 //Fallen Gardens Map
 ItemDisplay[t53]:%NAME%{%WHITE%Immunes: %GRAY%Immune-Free Zone%NAME%}
 //Desert Duel Arena
-ItemDisplay[t61]:%NAME%//
+ItemDisplay[t61]:%NAME%{%NAME%}//
 //Moor Duel Arena
-ItemDisplay[t62]:%NAME%//
+ItemDisplay[t62]:%NAME%{%NAME%}//
 //Maps End ##############################################################################################
 
 
@@ -1545,7 +1551,7 @@ ItemDisplay[tbk]:%DARK_GREEN%Tome of Town Portal//
 //Tome of Identify
 ItemDisplay[ibk]:%DARK_GREEN%Tome of Town Identify//
 //Key
-ItemDisplay[key CLVL<40]:%NAME%//
+ItemDisplay[key CLVL<40]:%NAME%{%NAME%}//
 ItemDisplay[key]://
 //Wirt's Leg
 ItemDisplay[leg]:%DARK_GREEN%Wirt's Leg//
@@ -1577,33 +1583,33 @@ ItemDisplay[GLOVES (MAG OR RARE) ETH FILTLVL>1]:%NAME%%RED% - CRAFT
 
 //Arrows
 ItemDisplay[aqv NMAG]://
-ItemDisplay[aqv MAG !ID CLVL<30]:%NAME%//
+ItemDisplay[aqv MAG !ID CLVL<30]:%NAME%{%NAME%}//
 ItemDisplay[aqv MAG !ID]://
-ItemDisplay[aqv RARE !ID CLVL<70]:%NAME%//
+ItemDisplay[aqv RARE !ID CLVL<70]:%NAME%{%NAME%}//
 ItemDisplay[aqv RARE !ID]://
 ItemDisplay[aqv UNI !ID]:%UNIQUE_NOTIFY3%%UNIQUE_PREFIX3%%UNIQUE3%%UNIQUE_SUFFIX3%//
 ItemDisplay[aqv SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
 
 //Bolts
 ItemDisplay[cqv NMAG]://
-ItemDisplay[cqv MAG !ID CLVL<30]:%NAME%//
+ItemDisplay[cqv MAG !ID CLVL<30]:%NAME%{%NAME%}//
 ItemDisplay[cqv MAG !ID]://
-ItemDisplay[cqv RARE !ID CLVL<70]:%NAME%//
+ItemDisplay[cqv RARE !ID CLVL<70]:%NAME%{%NAME%}//
 ItemDisplay[cqv RARE !ID]://
 ItemDisplay[cqv UNI !ID]:%UNIQUE_NOTIFY3%%UNIQUE_PREFIX3%%UNIQUE3%%UNIQUE_SUFFIX3%//
 ItemDisplay[cqv SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
 
 //Rings Start ##############################################################################################
-ItemDisplay[rin MAG !ID CLVL<60]:%NAME%//
+ItemDisplay[rin MAG !ID CLVL<60]:%NAME%{%NAME%}//
 ItemDisplay[rin MAG !ID]://
 ItemDisplay[rin RARE !ID]:%DOT-A8%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%YELLOW%//
 ItemDisplay[rin UNI !ID]:%UNIQUE_NOTIFY3%%UNIQUE_PREFIX3%%UNIQUE3%%UNIQUE_SUFFIX3%//Nagelring || Manald Heal || The Stone of Jordan || Dwarf Star || Raven Frost || Bul-Kathos' Wedding Band || Carrion Wind || Natures' Peace || Wisp Projector || Kadala's Heirloom
-ItemDisplay[rin SET !ID CLVL<70]:%NAME%//Cathan's Seal || Angelic Halo || Bul-Kathos' Death Band
+ItemDisplay[rin SET !ID CLVL<70]:%NAME%{%NAME%}//Cathan's Seal || Angelic Halo || Bul-Kathos' Death Band
 ItemDisplay[rin SET !ID]://Cathan's Seal || Angelic Halo || Bul-Kathos' Death Band
 //Rings End ##############################################################################################
  
 //Amulets Start ##############################################################################################
-ItemDisplay[amu MAG !ID CLVL<60]:%NAME%//
+ItemDisplay[amu MAG !ID CLVL<60]:%NAME%{%NAME%}//
 ItemDisplay[amu MAG !ID]://
 ItemDisplay[amu RARE !ID]:%DOT-A8%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%YELLOW%//
 ItemDisplay[amu UNI !ID]:%UNIQUE_NOTIFY3%%UNIQUE_PREFIX3%%UNIQUE3%%UNIQUE_SUFFIX3%//Nokozan Relic || The Eye of Etlich || The Mahim-Oak Curio || Saracen's Chance || Crescent Moon || The Cat's Eye || Atma's Scarab || Highlord's Wrath || The Rising Sun || Seraph's Hymn || Mara's Kaleidoscope || Metalgrid
@@ -1624,44 +1630,44 @@ ItemDisplay[jew SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
 
 //Charms Start ##############################################################################################
 //Small Charm
-ItemDisplay[cm1 NMAG !RW]:%NAME%//
+ItemDisplay[cm1 NMAG !RW]:%NAME%{%NAME%}//
 ItemDisplay[cm1 MAG !ID]:%DOT-9B%%PURPLE%*%BLUE%   %NAME%   %PURPLE%*//
-ItemDisplay[cm1 RARE !ID]:%NAME%//
+ItemDisplay[cm1 RARE !ID]:%NAME%{%NAME%}//
 ItemDisplay[cm1 UNI !ID]:%UNIQUE_NOTIFY3%%YELLOW%*%TAN%*%GRAY%*     %GOLD%Annihilus%GRAY%     *%TAN%*%YELLOW%*//Annihilus
 ItemDisplay[cm1 SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
 
 //Small Charm PVP
-ItemDisplay[cm1p NMAG !RW]:%NAME%//
-ItemDisplay[cm1p MAG !ID]:%NAME%//
-ItemDisplay[cm1p RARE !ID]:%NAME%//
+ItemDisplay[cm1p NMAG !RW]:%NAME%{%NAME%}//
+ItemDisplay[cm1p MAG !ID]:%NAME%{%NAME%}//
+ItemDisplay[cm1p RARE !ID]:%NAME%{%NAME%}//
 ItemDisplay[cm1p UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
 ItemDisplay[cm1p SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Large Charm
-ItemDisplay[cm2 NMAG !RW]:%NAME%//
+ItemDisplay[cm2 NMAG !RW]:%NAME%{%NAME%}//
 ItemDisplay[cm2 MAG !ID]:%DOT-9B%%PURPLE%*%BLUE%   %NAME%   %PURPLE%*//
-ItemDisplay[cm2 RARE !ID]:%NAME%//
+ItemDisplay[cm2 RARE !ID]:%NAME%{%NAME%}//
 ItemDisplay[cm2 UNI !ID]:%UNIQUE_NOTIFY3%%YELLOW%*%TAN%*%GRAY%*     %GOLD%Hellfire Torch%GRAY%     *%TAN%*%YELLOW%*//Hellfire Torch
 ItemDisplay[cm2 SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
 
 //Large Charm PVP
-ItemDisplay[cm2p NMAG !RW]:%NAME%//
-ItemDisplay[cm2p MAG !ID]:%NAME%//
-ItemDisplay[cm2p RARE !ID]:%NAME%//
+ItemDisplay[cm2p NMAG !RW]:%NAME%{%NAME%}//
+ItemDisplay[cm2p MAG !ID]:%NAME%{%NAME%}//
+ItemDisplay[cm2p RARE !ID]:%NAME%{%NAME%}//
 ItemDisplay[cm2p UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
 ItemDisplay[cm2p SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Grand Charm
-ItemDisplay[cm3 NMAG !RW]:%NAME%//
+ItemDisplay[cm3 NMAG !RW]:%NAME%{%NAME%}//
 ItemDisplay[cm3 MAG !ID]:%DOT-9B%%PURPLE%*%BLUE%   %NAME%   %PURPLE%*//
-ItemDisplay[cm3 RARE !ID]:%NAME%//
+ItemDisplay[cm3 RARE !ID]:%NAME%{%NAME%}//
 ItemDisplay[cm3 UNI !ID]:%UNIQUE_NOTIFY3%%YELLOW%*%TAN%*%GRAY%*     %GOLD%Gheed's Fortune%GRAY%     *%TAN%*%YELLOW%*//Gheed's Fortune
 ItemDisplay[cm3 SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
 
 //Grand Charm PVP
-ItemDisplay[cm3p NMAG !RW]:%NAME%//
-ItemDisplay[cm3p MAG !ID]:%NAME%//
-ItemDisplay[cm3p RARE !ID]:%NAME%//
+ItemDisplay[cm3p NMAG !RW]:%NAME%{%NAME%}//
+ItemDisplay[cm3p MAG !ID]:%NAME%{%NAME%}//
+ItemDisplay[cm3p RARE !ID]:%NAME%{%NAME%}//
 ItemDisplay[cm3p UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
 ItemDisplay[cm3p SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
@@ -2631,7 +2637,7 @@ ItemDisplay[xar SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//Griswold
 
 //Elite Chests
 //Dusk Shroud
-ItemDisplay[uui NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[uui NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[uui NMAG !RW]://
 ItemDisplay[uui MAG !ID]://
 ItemDisplay[uui RARE !ID]://
@@ -2640,7 +2646,7 @@ ItemDisplay[uui SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Dark Adh
 
 
 //Wyrmhide
-ItemDisplay[uea NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[uea NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[uea NMAG !RW]://
 ItemDisplay[uea MAG !ID]://
 ItemDisplay[uea RARE !ID]://
@@ -2649,7 +2655,7 @@ ItemDisplay[uea SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Scarab Husk
-ItemDisplay[ula NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[ula NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[ula NMAG !RW]://
 ItemDisplay[ula MAG !ID]://
 ItemDisplay[ula RARE !ID]://
@@ -2658,7 +2664,7 @@ ItemDisplay[ula SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Wire Fleece
-ItemDisplay[utu NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[utu NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[utu NMAG !RW]://
 ItemDisplay[utu MAG !ID]://
 ItemDisplay[utu RARE !ID]://
@@ -2667,7 +2673,7 @@ ItemDisplay[utu SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Diamond Mail
-ItemDisplay[ung NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[ung NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[ung NMAG !RW]://
 ItemDisplay[ung MAG !ID]://
 ItemDisplay[ung RARE !ID]://
@@ -2676,7 +2682,7 @@ ItemDisplay[ung SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Loricated Mail
-ItemDisplay[ucl NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[ucl NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[ucl NMAG !RW]://
 ItemDisplay[ucl MAG !ID]://
 ItemDisplay[ucl RARE !ID]://
@@ -2685,7 +2691,7 @@ ItemDisplay[ucl SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//Natalya'
 
 
 //Boneweave
-ItemDisplay[uhn NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[uhn NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[uhn NMAG !RW]://
 ItemDisplay[uhn MAG !ID]://
 ItemDisplay[uhn RARE !ID]://
@@ -2698,7 +2704,7 @@ ItemDisplay[rar UNI !ID]:%UNIQUE_NOTIFY3%%UNIQUE_PREFIX3%%UNIQUE3%%UNIQUE_SUFFIX
 
 
 //Great Hauberk
-ItemDisplay[urs NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[urs NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[urs NMAG !RW]://
 ItemDisplay[urs MAG !ID]://
 ItemDisplay[urs RARE !ID]://
@@ -2707,7 +2713,7 @@ ItemDisplay[urs SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Balrog Skin
-ItemDisplay[upl NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[upl NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[upl NMAG !RW]://
 ItemDisplay[upl MAG !ID]://
 ItemDisplay[upl RARE !ID]://
@@ -2716,7 +2722,7 @@ ItemDisplay[upl SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Sazabi's
 
 
 //Hellforge Plate
-ItemDisplay[ult NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[ult NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[ult NMAG !RW]://
 ItemDisplay[ult MAG !ID]://
 ItemDisplay[ult RARE !ID]://
@@ -2725,7 +2731,7 @@ ItemDisplay[ult SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Naj's Li
 
 
 //Kraken Shell
-ItemDisplay[uld NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[uld NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[uld NMAG !RW]://
 ItemDisplay[uld MAG !ID]://
 ItemDisplay[uld RARE !ID]://
@@ -2734,7 +2740,7 @@ ItemDisplay[uld SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//M'avina'
 
 
 //Lacquered Plate
-ItemDisplay[uth NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[uth NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[uth NMAG !RW]://
 ItemDisplay[uth MAG !ID]://
 ItemDisplay[uth RARE !ID]://
@@ -2743,7 +2749,7 @@ ItemDisplay[uth SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//Tal Rash
 
 
 //Archon Plate
-ItemDisplay[utp NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[utp NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[utp NMAG !RW]://
 ItemDisplay[utp MAG !ID]://
 ItemDisplay[utp RARE !ID]://
@@ -2752,7 +2758,7 @@ ItemDisplay[utp SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Shadow Plate
-ItemDisplay[uul NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[uul NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[uul NMAG !RW]://
 ItemDisplay[uul MAG !ID]://
 ItemDisplay[uul RARE !ID]://
@@ -2761,7 +2767,7 @@ ItemDisplay[uul SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//Aldur's 
 
 
 //Sacred Armor
-ItemDisplay[uar NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%//
+ItemDisplay[uar NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[uar NMAG !RW]://
 ItemDisplay[uar MAG !ID]://
 ItemDisplay[uar RARE !ID]://
@@ -4928,7 +4934,7 @@ ItemDisplay[9wc SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Elite Polearms
 //Ogre Axe
-ItemDisplay[7o7 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%//
+ItemDisplay[7o7 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
 ItemDisplay[7o7 NMAG !RW]://
 ItemDisplay[7o7 MAG !ID]://
 ItemDisplay[7o7 RARE !ID]://
@@ -4937,7 +4943,7 @@ ItemDisplay[7o7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Colossus Voulge
-ItemDisplay[7vo NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%//
+ItemDisplay[7vo NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
 ItemDisplay[7vo NMAG !RW]://
 ItemDisplay[7vo MAG !ID]://
 ItemDisplay[7vo RARE !ID]://
@@ -4946,7 +4952,7 @@ ItemDisplay[7vo SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Thresher
-ItemDisplay[7s8 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%//
+ItemDisplay[7s8 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
 ItemDisplay[7s8 NMAG !RW]://
 ItemDisplay[7s8 MAG !ID]://
 ItemDisplay[7s8 RARE !ID]://
@@ -4955,7 +4961,7 @@ ItemDisplay[7s8 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Cryptic Axe
-ItemDisplay[7pa NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%//
+ItemDisplay[7pa NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
 ItemDisplay[7pa NMAG !RW]://
 ItemDisplay[7pa MAG !ID]://
 ItemDisplay[7pa RARE !ID]://
@@ -4964,7 +4970,7 @@ ItemDisplay[7pa SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Great Poleaxe
-ItemDisplay[7h7 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%//
+ItemDisplay[7h7 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
 ItemDisplay[7h7 NMAG !RW]://
 ItemDisplay[7h7 MAG !ID]://
 ItemDisplay[7h7 RARE !ID]://
@@ -4973,7 +4979,7 @@ ItemDisplay[7h7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Giant Thresher
-ItemDisplay[7wc NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%//
+ItemDisplay[7wc NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
 ItemDisplay[7wc NMAG !RW]://
 ItemDisplay[7wc MAG !ID]://
 ItemDisplay[7wc RARE !ID]://
@@ -5146,7 +5152,7 @@ ItemDisplay[6cb SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Diamond Bow
-ItemDisplay[6s7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
+ItemDisplay[6s7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6s7 NMAG !RW]://
 ItemDisplay[6s7 MAG !ID]://
 ItemDisplay[6s7 RARE !ID]://
@@ -5155,7 +5161,7 @@ ItemDisplay[6s7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Crusader Bow
-ItemDisplay[6l7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
+ItemDisplay[6l7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6l7 NMAG !RW]://
 ItemDisplay[6l7 MAG !ID]://
 ItemDisplay[6l7 RARE !ID]://
@@ -5164,7 +5170,7 @@ ItemDisplay[6l7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Ward Bow
-ItemDisplay[6sw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
+ItemDisplay[6sw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6sw NMAG !RW]://
 ItemDisplay[6sw MAG !ID]://
 ItemDisplay[6sw RARE !ID]://
@@ -5173,7 +5179,7 @@ ItemDisplay[6sw SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Hydra Bow
-ItemDisplay[6lw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
+ItemDisplay[6lw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6lw NMAG !RW]://
 ItemDisplay[6lw MAG !ID]://
 ItemDisplay[6lw RARE !ID]://
@@ -5250,7 +5256,7 @@ ItemDisplay[8rx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Elite Crossbows
 //Pellet Bow
-ItemDisplay[6lx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
+ItemDisplay[6lx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6lx NMAG !RW]://
 ItemDisplay[6lx MAG !ID]://
 ItemDisplay[6lx RARE !ID]://
@@ -5259,7 +5265,7 @@ ItemDisplay[6lx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Gorgon Crossbow
-ItemDisplay[6mx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
+ItemDisplay[6mx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6mx NMAG !RW]://
 ItemDisplay[6mx MAG !ID]://
 ItemDisplay[6mx RARE !ID]://
@@ -5268,7 +5274,7 @@ ItemDisplay[6mx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Colossus Crossbow
-ItemDisplay[6hx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
+ItemDisplay[6hx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6hx NMAG !RW]://
 ItemDisplay[6hx MAG !ID]://
 ItemDisplay[6hx RARE !ID]://
@@ -5277,7 +5283,7 @@ ItemDisplay[6hx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Demon Crossbow
-ItemDisplay[6rx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%//
+ItemDisplay[6rx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6rx NMAG !RW]://
 ItemDisplay[6rx MAG !ID]://
 ItemDisplay[6rx RARE !ID]://
@@ -5586,14 +5592,14 @@ ItemDisplay[7ws SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//Griswold
 
 
 //Assassin Claws
-ItemDisplay[SIN (MAG OR RARE) !CRAFT ID FILTLVL>1]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[SIN (MAG OR RARE) !CRAFT ID FILTLVL>1]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 //Normal Assassin Claws
 //Katar
 ItemDisplay[ktr NMAG !RW]://
-ItemDisplay[ktr MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[ktr RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[ktr MAG ETH !ID FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[ktr RARE ETH !ID FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[ktr MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[ktr RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[ktr MAG ETH !ID FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[ktr RARE ETH !ID FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 ItemDisplay[ktr MAG !ID]://
 ItemDisplay[ktr RARE !ID]://
 ItemDisplay[ktr UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
@@ -5610,10 +5616,10 @@ ItemDisplay[wrb SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Hatchet Hands
 ItemDisplay[axf NMAG !RW]://
-ItemDisplay[axf MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[axf RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[axf MAG ETH !ID FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[axf RARE ETH !ID FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[axf MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[axf RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[axf MAG ETH !ID FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[axf RARE ETH !ID FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 ItemDisplay[axf MAG !ID]://
 ItemDisplay[axf RARE !ID]://
 ItemDisplay[axf UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
@@ -5645,12 +5651,12 @@ ItemDisplay[btl SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Scissors Katar
-//ItemDisplay[skr NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%//
+//ItemDisplay[skr NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%{%NAME%}//
 ItemDisplay[skr NMAG !RW]://
-ItemDisplay[skr MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[skr RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[skr MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[skr RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[skr MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[skr RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[skr MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[skr RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 ItemDisplay[skr MAG !ID]://
 ItemDisplay[skr RARE !ID]://
 ItemDisplay[skr UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
@@ -5660,10 +5666,10 @@ ItemDisplay[skr SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 //Exceptional Assassin Claws
 //Quhab
 ItemDisplay[9ar NMAG !RW]://
-ItemDisplay[9ar MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9ar RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9ar MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9ar RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[9ar MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9ar RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9ar MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9ar RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 ItemDisplay[9ar MAG !ID]://
 ItemDisplay[9ar RARE !ID]://
 ItemDisplay[9ar UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Mage Slayer
@@ -5680,10 +5686,10 @@ ItemDisplay[9wb SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Fascia
 ItemDisplay[9xf NMAG !RW]://
-ItemDisplay[9xf MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9xf RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9xf MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9xf RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[9xf MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9xf RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9xf MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9xf RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 ItemDisplay[9xf MAG !ID]://
 ItemDisplay[9xf RARE !ID]://
 ItemDisplay[9xf UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
@@ -5716,10 +5722,10 @@ ItemDisplay[9tw SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Scissors Quhab
 ItemDisplay[9qr NMAG !RW]://
-ItemDisplay[9qr MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9qr RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9qr MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[9qr RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[9qr MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9qr RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9qr MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[9qr RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 ItemDisplay[9qr MAG !ID]://
 ItemDisplay[9qr RARE !ID]://
 ItemDisplay[9qr UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
@@ -5728,7 +5734,7 @@ ItemDisplay[9qr SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Elite Assassin Claws
 //Suwayyah	
-ItemDisplay[7ar NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%//
+ItemDisplay[7ar NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%{%NAME%}//
 ItemDisplay[7ar NMAG !RW]://
 ItemDisplay[7ar MAG !ID]://
 ItemDisplay[7ar RARE !ID]://
@@ -5737,7 +5743,7 @@ ItemDisplay[7ar SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Wrist Sword
-ItemDisplay[7wb NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%//
+ItemDisplay[7wb NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%{%NAME%}//
 ItemDisplay[7wb NMAG !RW]://
 ItemDisplay[7wb MAG !ID]://
 ItemDisplay[7wb RARE !ID]://
@@ -5746,12 +5752,12 @@ ItemDisplay[7wb SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //War Fist	
-ItemDisplay[7xf NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%//
+ItemDisplay[7xf NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%{%NAME%}//
 ItemDisplay[7xf NMAG !RW]://
-ItemDisplay[7xf MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[7xf RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[7xf MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[7xf RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[7xf MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[7xf RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[7xf MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[7xf RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 ItemDisplay[7xf MAG !ID]://
 ItemDisplay[7xf RARE !ID]://
 ItemDisplay[7xf UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
@@ -5759,7 +5765,7 @@ ItemDisplay[7xf SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Battle Cestus
-ItemDisplay[7cs NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%//
+ItemDisplay[7cs NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%{%NAME%}//
 ItemDisplay[7cs NMAG !RW]://
 ItemDisplay[7cs MAG !ID]://
 ItemDisplay[7cs RARE !ID]://
@@ -5768,7 +5774,7 @@ ItemDisplay[7cs SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Firelizard's Talons
-ItemDisplay[7lw NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%//
+ItemDisplay[7lw NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%{%NAME%}//
 ItemDisplay[7lw NMAG !RW]://
 ItemDisplay[7lw MAG !ID]://
 ItemDisplay[7lw RARE !ID]://
@@ -5777,7 +5783,7 @@ ItemDisplay[7lw SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Runic Talons
-ItemDisplay[7tw NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%//
+ItemDisplay[7tw NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%{%NAME%}//
 ItemDisplay[7tw NMAG !RW]://
 ItemDisplay[7tw MAG !ID]://
 ItemDisplay[7tw RARE !ID]://
@@ -5786,12 +5792,12 @@ ItemDisplay[7tw SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Scissors Suwayyah
-ItemDisplay[7qr NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%//
+ItemDisplay[7qr NMAG ETH (SOCK=0 OR SOCK=3) (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !RW]:%DOT-1A%%NAME%{%NAME%}//
 ItemDisplay[7qr NMAG !RW]://
-ItemDisplay[7qr MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[7qr RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[7qr MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
-ItemDisplay[7qr RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT//
+ItemDisplay[7qr MAG !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[7qr RARE !ID FILTLVL=2]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[7qr MAG !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
+ItemDisplay[7qr RARE !ID ETH FILTLVL=3]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}//
 ItemDisplay[7qr MAG !ID]://
 ItemDisplay[7qr RARE !ID]://
 ItemDisplay[7qr UNI !ID]:%UNIQUE_NOTIFY3%%UNIQUE_PREFIX3%%UNIQUE3%%UNIQUE_SUFFIX3%//Aidan's Scar
@@ -6049,22 +6055,22 @@ ItemDisplay[amf SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 //Weapon Items End ##############################################################################################
 
 //Show every Crafted item
-ItemDisplay[CRAFT]:%NAME%//
+ItemDisplay[CRAFT]:%NAME%{%NAME%}//
 
 //Show every Runeword item
-ItemDisplay[RW]:%NAME%//
+ItemDisplay[RW]:%NAME%{%NAME%}//
 
 //Show every identified item
-ItemDisplay[(RARE OR MAG OR UNI OR SET OR RW OR CRAFT) MAPTIER<1 ID]:%NAME%//
+ItemDisplay[(RARE OR MAG OR UNI OR SET OR RW OR CRAFT) MAPTIER<1 ID]:%NAME%{%NAME%}//
 
 // General Vendor
-ItemDisplay[SHOP]:%NAME% %GRAY% - Shop%WHITE%
+ItemDisplay[SHOP]:%NAME%{%NAME%} %GRAY% - Shop%WHITE%
 
 //Gambling
 //Show me names of items in gambling screen
-ItemDisplay[(WEAPON OR ARMOR OR rin OR amu) NMAG !ID SHOP MAPID<133]: %NAME%
+ItemDisplay[(WEAPON OR ARMOR OR rin OR amu) NMAG !ID SHOP MAPID<133]: %NAME%{%NAME%}
 
 // Notifying for Unknown Items (future proofing) (Thanks to BetweenWalls)
 ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1) !(ARMOR OR WEAPON OR amu OR rin OR aqv OR cqv OR cm1 OR cm2 OR cm3 OR jew OR jewf OR RUNE>0 OR GEMTYPE>0 OR MAPTIER>-1 OR hp1 OR mp1 OR hp2 OR mp2 OR hp3 OR mp3 OR hp4 OR mp4 OR hp5 OR mp5 OR pvpp OR rvs OR rvl OR vps OR wms OR yps OR key OR tsc OR isc OR tbk OR ibk OR ear OR bks OR bkd OR box OR vip OR tr1 OR ass OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR toa OR tes OR ceh OR bet OR fed OR dhn OR bey OR mbr OR pk1 OR pk2 OR pk3 OR std OR wss OR cwss OR lpp OR lbox OR lmal OR crfb OR crfc OR crfh OR crfs OR crfv OR crfu OR crfp OR rtp OR rid OR rkey OR lsvl OR llmr OR ubtm OR uba OR ubaa OR ubab OR ubac OR dcma OR dcso OR dcho OR dcbl OR rtma OR rtmv OR rtmo OR cm2f OR rtmf OR iwss OR scrb OR upmp OR scou OR irma OR irra OR urma OR rrra OR imma OR imra OR upma OR rera OR fort OR ram)]: %MAP-0A%%PX-62%%NAME%{%NAME%%CL%%WHITE%Item description will be adjusted later during the season.%CL%%TAN%Note%WHITE%: This item is recently added to the game.}	// notifications for unknown items (the first group of conditions including ilvl/qty/price is a workaround for !GOLD>0 since that doesn't work like other conditions)
 
-ItemDisplay[]:%NAME% - UNHANDLED ITEM//hide everything else
+ItemDisplay[]:%NAME%{%NAME%} - UNHANDLED ITEM//hide everything else
