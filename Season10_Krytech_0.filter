@@ -1570,7 +1570,7 @@ ItemDisplay[crfu]:%DOT-66%%ORANGE%[%YELLOW%O%ORANGE%] %NAME%{Weapon: [50-80]% ED
 ItemDisplay[crfp]:%DOT-66%%ORANGE%[%WHITE%O%ORANGE%] %NAME%{Weapon: [20-40]% ED, 20% IAS, [50-100] AR%NL%Shield: [5-10]% All Res, [10-20]% Block, H. Freeze D.%NL%Chest: [5-10]% All Res, [10-20]% Block, [25-50]% Defense%NL%Helm: [5-10]% IAS, [25-50]% Defense, H. Freeze D.%NL%Boots: 10% FRW, [100-150] Def vs Missle, H. Freeze D.%NL%Gloves: [5-10]% IAS, [10-20]% AR, [25-50]% Defense%NL%Belt: [5-10]% IAS, [25-50]% Defense, H. Freeze D.%NL%Ring: [3-5]% All Res, [50-100] Def vs Missle, H. Freeze D.%NL%Amulet: [5-15]% All Res, [100-150] Def vs Missle, [4-8] All Attributes%NL%%TAN% Note%WHITE%: Guaranteed:}//
 //Infusions End ##############################################################################################
 
-ItemDisplay[GLOVES (MAG OR RARE) ETH FILTLVL=2]:%NAME%%RED% - CRAFT
+ItemDisplay[GLOVES (MAG OR RARE) ETH FILTLVL>1]:%NAME%%RED% - CRAFT
 
 
 //Arrows
