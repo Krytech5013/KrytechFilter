@@ -2141,7 +2141,7 @@ ItemDisplay[ci2 SET !ID]:%SET_NOTIFY1%%SET_PREFIX1%%SET1%%SET_SUFFIX1%//
 
 
 //Diadem
-ItemDisplay[ci3 NMAG !SUP SOCK=0 !RW]:%NAME%%GRAY% - IMBUE//
+ItemDisplay[ci3 NMAG !SUP !ETH SOCK=0 !RW CLVL<90]:%NAME%%GRAY% - IMBUE//
 ItemDisplay[ci3 NMAG !RW]://
 ItemDisplay[ci3 MAG !ID]://
 ItemDisplay[ci3 RARE !ID]:%DOT-A8%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%YELLOW%//
