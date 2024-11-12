@@ -3,8 +3,10 @@
 ItemDisplayFilterName[]:Default
 ItemDisplayFilterName[]:Crafting
 ItemDisplayFilterName[]:Crafting ETH
+ItemDisplayFilterName[]:Crafting Club
 
 Alias[NAME_ALIAS]:%NAME%{%NAME%}
+Alias[CRAFTING]:%DOT-1A%%NAME% %RED%- CRAFT{%NAME%}
 
 Alias[ETH_COLOR]:%GRAY%
 Alias[SUP_COLOR]:%DARK_GREEN%
@@ -1340,11 +1342,11 @@ ItemDisplay[rtp]:%MAP-0A%%PX-62%%GRAY%*%LIGHT_GRAY%*%RED%*   %NAME%    %RED%*%LI
 //Horadrim Almanac
 ItemDisplay[rid]:%MAP-0A%%PX-62%%GRAY%*%LIGHT_GRAY%*%RED%*   %NAME%    %RED%*%LIGHT_GRAY%*%GRAY%*//unlimited ID tome (from Rathma, uncommon)
 //Skeleton Key
-ItemDisplay[rkey]:%GG_NOTIFY1%%HYPE_PREFIX1% %GOLD%%NAME% %HYPE_SUFFIX%{%TAN%Note%WHITE%: You can use it w/o losing it in Cube recipes}//unlimited-use key (drops anywhere, 1 in 5 million chance)
+ItemDisplay[rkey]:%GG_NOTIFY1%%HYPE_PREFIX1% %GOLD%%NAME% %HYPE_SUFFIX1%{%TAN%Note%WHITE%: You can use it w/o losing it in Cube recipes}//unlimited-use key (drops anywhere, 1 in 5 million chance)
 //Vial of Lightsong
-ItemDisplay[lsvl]:%GG_NOTIFY1%%HYPE_PREFIX1% %GOLD%%NAME% %HYPE_SUFFIX%{%TAN%Note%WHITE%: %PURPLE%R%RED%A%ORANGE%R%YELLOW%E %WHITE%Item. Probably worth %YELLOW%A%ORANGE%L%RED%O%PURPLE%T}//Makes item Ethereal (drops anywhere, 1 in 7.5 million chance)
+ItemDisplay[lsvl]:%GG_NOTIFY1%%HYPE_PREFIX1% %GOLD%%NAME% %HYPE_SUFFIX1%{%TAN%Note%WHITE%: %PURPLE%R%RED%A%ORANGE%R%YELLOW%E %WHITE%Item. Probably worth %YELLOW%A%ORANGE%L%RED%O%PURPLE%T}//Makes item Ethereal (drops anywhere, 1 in 7.5 million chance)
 //Lilith's Mirror
-ItemDisplay[llmr]:%GG_NOTIFY1%%HYPE_PREFIX1% %GOLD%%NAME% %HYPE_SUFFIX%{%WHITE%Only works with %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%equipment%NL%%TAN%Note%WHITE%: %PURPLE%R%RED%A%ORANGE%R%YELLOW%E %WHITE%Item. Probably worth %YELLOW%A%ORANGE%L%RED%O%PURPLE%T}//Mirrors items (drops anywhere, 1 in 25 million chance)
+ItemDisplay[llmr]:%GG_NOTIFY1%%HYPE_PREFIX1% %GOLD%%NAME% %HYPE_SUFFIX1%{%WHITE%Only works with %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%equipment%NL%%TAN%Note%WHITE%: %PURPLE%R%RED%A%ORANGE%R%YELLOW%E %WHITE%Item. Probably worth %YELLOW%A%ORANGE%L%RED%O%PURPLE%T}//Mirrors items (drops anywhere, 1 in 25 million chance)
 //PD2 items End ##############################################################################################
 
 //Map Reagents Start ##############################################################################################
@@ -1578,14 +1580,15 @@ ItemDisplay[crfu]:%DOT-66%%ORANGE%[%YELLOW%O%ORANGE%] %NAME%{Weapon: [50-80]% ED
 ItemDisplay[crfp]:%DOT-66%%ORANGE%[%WHITE%O%ORANGE%] %NAME%{Weapon: [20-40]% ED, 20% IAS, [50-100] AR%NL%Shield: [5-10]% All Res, [10-20]% Block, H. Freeze D.%NL%Chest: [5-10]% All Res, [10-20]% Block, [25-50]% Defense%NL%Helm: [5-10]% IAS, [25-50]% Defense, H. Freeze D.%NL%Boots: 10% FRW, [100-150] Def vs Missle, H. Freeze D.%NL%Gloves: [5-10]% IAS, [10-20]% AR, [25-50]% Defense%NL%Belt: [5-10]% IAS, [25-50]% Defense, H. Freeze D.%NL%Ring: [3-5]% All Res, [50-100] Def vs Missle, H. Freeze D.%NL%Amulet: [5-15]% All Res, [100-150] Def vs Missle, [4-8] All Attributes%NL%%TAN% Note%WHITE%: Guaranteed:}//
 //Infusions End ##############################################################################################
 
-ItemDisplay[GLOVES (MAG OR RARE) ETH FILTLVL>1]:%NAME%%RED% - CRAFT
+
+ItemDisplay[GLOVES (MAG OR RARE) ETH FILTLVL>1]:%NAME%%RED% - CRAFT//CUSTOM INSERT to show crafted tag for items in stash
 
 
 //Arrows
 ItemDisplay[aqv NMAG]://
 ItemDisplay[aqv MAG !ID CLVL<30]:%NAME%{%NAME%}//
 ItemDisplay[aqv MAG !ID]://
-ItemDisplay[aqv RARE !ID CLVL<70]:%NAME%{%NAME%}//
+ItemDisplay[aqv RARE !ID CLVL<80]:%NAME%{%NAME%}//
 ItemDisplay[aqv RARE !ID]://
 ItemDisplay[aqv UNI !ID]:%UNIQUE_NOTIFY3%%UNIQUE_PREFIX3%%UNIQUE3%%UNIQUE_SUFFIX3%//
 ItemDisplay[aqv SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
@@ -1594,7 +1597,7 @@ ItemDisplay[aqv SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
 ItemDisplay[cqv NMAG]://
 ItemDisplay[cqv MAG !ID CLVL<30]:%NAME%{%NAME%}//
 ItemDisplay[cqv MAG !ID]://
-ItemDisplay[cqv RARE !ID CLVL<70]:%NAME%{%NAME%}//
+ItemDisplay[cqv RARE !ID CLVL<80]:%NAME%{%NAME%}//
 ItemDisplay[cqv RARE !ID]://
 ItemDisplay[cqv UNI !ID]:%UNIQUE_NOTIFY3%%UNIQUE_PREFIX3%%UNIQUE3%%UNIQUE_SUFFIX3%//
 ItemDisplay[cqv SET !ID]:%SET_NOTIFY3%%SET_PREFIX3%%SET3%%SET_SUFFIX3%//
@@ -2575,7 +2578,7 @@ ItemDisplay[xhn SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 ItemDisplay[xrs NMAG !RW]://
 ItemDisplay[xrs MAG !ID]://
 ItemDisplay[xrs RARE !ID]://
-ItemDisplay[xrs UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Duriel's Shell
+ItemDisplay[xrs UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Duriel's Shell
 ItemDisplay[xrs SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Haemosu's Adamant
 
 
@@ -2583,7 +2586,7 @@ ItemDisplay[xrs SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Haemosu'
 ItemDisplay[xpl NMAG !RW]://
 ItemDisplay[xpl MAG !ID]://
 ItemDisplay[xpl RARE !ID]://
-ItemDisplay[xpl UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Skullder's Ire
+ItemDisplay[xpl UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Skullder's Ire
 ItemDisplay[xpl SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
@@ -2615,7 +2618,7 @@ ItemDisplay[xth SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 ItemDisplay[xtp NMAG !RW]://
 ItemDisplay[xtp MAG !ID]://
 ItemDisplay[xtp RARE !ID]://
-ItemDisplay[xtp UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Que-Hegan's Wisdom
+ItemDisplay[xtp UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Que-Hegan's Wisdom
 ItemDisplay[xtp SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
@@ -2623,7 +2626,7 @@ ItemDisplay[xtp SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 ItemDisplay[xul NMAG !RW]://
 ItemDisplay[xul MAG !ID]://
 ItemDisplay[xul RARE !ID]://
-ItemDisplay[xul UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Black Hades
+ItemDisplay[xul UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Black Hades
 ItemDisplay[xul SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Trang-Oul's Scales
 
 
@@ -2631,7 +2634,7 @@ ItemDisplay[xul SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Trang-Ou
 ItemDisplay[xar NMAG !RW]://
 ItemDisplay[xar MAG !ID]://
 ItemDisplay[xar RARE !ID]://
-ItemDisplay[xar UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Corpsemourn
+ItemDisplay[xar UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Corpsemourn
 ItemDisplay[xar SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//Griswold's Heart
 
 
@@ -2668,7 +2671,7 @@ ItemDisplay[utu NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[utu NMAG !RW]://
 ItemDisplay[utu MAG !ID]://
 ItemDisplay[utu RARE !ID]://
-ItemDisplay[utu UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//The Gladiator's Bane
+ItemDisplay[utu UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//The Gladiator's Bane
 ItemDisplay[utu SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
@@ -2687,7 +2690,7 @@ ItemDisplay[ucl NMAG !RW]://
 ItemDisplay[ucl MAG !ID]://
 ItemDisplay[ucl RARE !ID]://
 ItemDisplay[ucl UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//
-ItemDisplay[ucl SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//Natalya's Shadow
+ItemDisplay[ucl SET !ID]:%SET_NOTIFY1%%SET_PREFIX1%%SET1%%SET_SUFFIX1%//Natalya's Shadow
 
 
 //Boneweave
@@ -2717,7 +2720,7 @@ ItemDisplay[upl NMAG ED>9 (SOCK=0 OR SOCK>2) !RW]:%NAME%{%NAME%}//
 ItemDisplay[upl NMAG !RW]://
 ItemDisplay[upl MAG !ID]://
 ItemDisplay[upl RARE !ID]://
-ItemDisplay[upl UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Arkaine's Valor
+ItemDisplay[upl UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Arkaine's Valor
 ItemDisplay[upl SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Sazabi's Ghost Liberator
 
 
@@ -3853,6 +3856,8 @@ ItemDisplay[7gi SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 //Normal Maces
 //Club
 ItemDisplay[clb NMAG !RW]://
+ItemDisplay[clb MAG !ID !ETH FILTLVL=4]:%CRAFTING%//
+ItemDisplay[clb RARE !ID !ETH FILTLVL=4]:%CRAFTING%//
 ItemDisplay[clb MAG !ID]://
 ItemDisplay[clb RARE !ID]://
 ItemDisplay[clb UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Felloak
@@ -3861,6 +3866,8 @@ ItemDisplay[clb SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Spiked Club
 ItemDisplay[spc NMAG !RW]://
+ItemDisplay[spc MAG !ID !ETH FILTLVL=4]:%CRAFTING%//
+ItemDisplay[spc RARE !ID !ETH FILTLVL=4]:%CRAFTING%//
 ItemDisplay[spc MAG !ID]://
 ItemDisplay[spc RARE !ID]://
 ItemDisplay[spc UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Stoutnail
@@ -3918,6 +3925,8 @@ ItemDisplay[gma SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 //Exceptional Maces
 //Cudgel
 ItemDisplay[9cl NMAG !RW]://
+ItemDisplay[9cl MAG !ID !ETH FILTLVL=4]:%CRAFTING%//
+ItemDisplay[9cl RARE !ID !ETH FILTLVL=4]:%CRAFTING%//
 ItemDisplay[9cl MAG !ID]://
 ItemDisplay[9cl RARE !ID]://
 ItemDisplay[9cl UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Dark Clan Crusher
@@ -3926,6 +3935,8 @@ ItemDisplay[9cl SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Barbed Club
 ItemDisplay[9sp NMAG !RW]://
+ItemDisplay[9sp MAG !ID !ETH FILTLVL=4]:%CRAFTING%//
+ItemDisplay[9sp RARE !ID !ETH FILTLVL=4]:%CRAFTING%//
 ItemDisplay[9sp MAG !ID]://
 ItemDisplay[9sp RARE !ID]://
 ItemDisplay[9sp UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Fleshrender
@@ -3983,6 +3994,8 @@ ItemDisplay[9gm SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 //Elite Maces
 //Truncheon
 ItemDisplay[7cl NMAG !RW]://
+ItemDisplay[7cl MAG !ID FILTLVL=4]:%CRAFTING%//
+ItemDisplay[7cl RARE !ID FILTLVL=4]:%CRAFTING%//
 ItemDisplay[7cl MAG !ID]://
 ItemDisplay[7cl RARE !ID]://
 ItemDisplay[7cl UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Nord's Tenderizer
@@ -3991,6 +4004,8 @@ ItemDisplay[7cl SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Tyrant Club	
 ItemDisplay[7sp NMAG !RW]://
+ItemDisplay[7sp MAG !ID !ETH FILTLVL=4]:%CRAFTING%//
+ItemDisplay[7sp RARE !ID !ETH FILTLVL=4]:%CRAFTING%//
 ItemDisplay[7sp MAG !ID]://
 ItemDisplay[7sp RARE !ID]://
 ItemDisplay[7sp UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Demon Limb
@@ -4794,6 +4809,7 @@ ItemDisplay[9p9 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Elite Spears
 //Hyperion Spear
+ItemDisplay[7sr NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7sr NMAG !RW]://
 ItemDisplay[7sr MAG !ID]://
 ItemDisplay[7sr RARE !ID]://
@@ -4802,6 +4818,7 @@ ItemDisplay[7sr SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Stygian Pike
+ItemDisplay[7o7 NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7tr NMAG !RW]://
 ItemDisplay[7tr MAG !ID]://
 ItemDisplay[7tr RARE !ID]://
@@ -4810,6 +4827,7 @@ ItemDisplay[7tr SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Mancatcher
+ItemDisplay[7br NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7br NMAG !RW]://
 ItemDisplay[7br MAG !ID]://
 ItemDisplay[7br RARE !ID]://
@@ -4818,6 +4836,7 @@ ItemDisplay[7br SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Ghost Spear
+ItemDisplay[7st NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7st NMAG !RW]://
 ItemDisplay[7st MAG !ID]://
 ItemDisplay[7st RARE !ID]://
@@ -4826,6 +4845,7 @@ ItemDisplay[7st SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //War Pike
+ItemDisplay[7p7 NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7p7 NMAG !RW]://
 ItemDisplay[7p7 MAG !ID]://
 ItemDisplay[7p7 RARE !ID]://
@@ -4934,7 +4954,7 @@ ItemDisplay[9wc SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 //Elite Polearms
 //Ogre Axe
-ItemDisplay[7o7 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
+ItemDisplay[7o7 NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7o7 NMAG !RW]://
 ItemDisplay[7o7 MAG !ID]://
 ItemDisplay[7o7 RARE !ID]://
@@ -4943,7 +4963,7 @@ ItemDisplay[7o7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Colossus Voulge
-ItemDisplay[7vo NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
+ItemDisplay[7vo NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7vo NMAG !RW]://
 ItemDisplay[7vo MAG !ID]://
 ItemDisplay[7vo RARE !ID]://
@@ -4952,7 +4972,7 @@ ItemDisplay[7vo SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Thresher
-ItemDisplay[7s8 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
+ItemDisplay[7s8 NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7s8 NMAG !RW]://
 ItemDisplay[7s8 MAG !ID]://
 ItemDisplay[7s8 RARE !ID]://
@@ -4961,7 +4981,7 @@ ItemDisplay[7s8 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Cryptic Axe
-ItemDisplay[7pa NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
+ItemDisplay[7pa NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7pa NMAG !RW]://
 ItemDisplay[7pa MAG !ID]://
 ItemDisplay[7pa RARE !ID]://
@@ -4970,7 +4990,7 @@ ItemDisplay[7pa SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Great Poleaxe
-ItemDisplay[7h7 NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
+ItemDisplay[7h7 NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7h7 NMAG !RW]://
 ItemDisplay[7h7 MAG !ID]://
 ItemDisplay[7h7 RARE !ID]://
@@ -4979,7 +4999,7 @@ ItemDisplay[7h7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Giant Thresher
-ItemDisplay[7wc NMAG ETH (SOCK=0 OR SOCK>3) !RW]:%NAME%{%NAME%}//
+ItemDisplay[7wc NMAG ETH (SOCK=0 OR SOCK>3) ED>9 !RW]:%NAME%{%NAME%}//
 ItemDisplay[7wc NMAG !RW]://
 ItemDisplay[7wc MAG !ID]://
 ItemDisplay[7wc RARE !ID]://
@@ -5152,7 +5172,7 @@ ItemDisplay[6cb SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Diamond Bow
-ItemDisplay[6s7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
+//ItemDisplay[6s7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6s7 NMAG !RW]://
 ItemDisplay[6s7 MAG !ID]://
 ItemDisplay[6s7 RARE !ID]://
@@ -5161,7 +5181,7 @@ ItemDisplay[6s7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Crusader Bow
-ItemDisplay[6l7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
+//ItemDisplay[6l7 NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6l7 NMAG !RW]://
 ItemDisplay[6l7 MAG !ID]://
 ItemDisplay[6l7 RARE !ID]://
@@ -5170,7 +5190,7 @@ ItemDisplay[6l7 SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Ward Bow
-ItemDisplay[6sw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
+//ItemDisplay[6sw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6sw NMAG !RW]://
 ItemDisplay[6sw MAG !ID]://
 ItemDisplay[6sw RARE !ID]://
@@ -5179,7 +5199,7 @@ ItemDisplay[6sw SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Hydra Bow
-ItemDisplay[6lw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
+//ItemDisplay[6lw NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6lw NMAG !RW]://
 ItemDisplay[6lw MAG !ID]://
 ItemDisplay[6lw RARE !ID]://
@@ -5234,7 +5254,7 @@ ItemDisplay[8lx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 ItemDisplay[8mx NMAG !RW]://
 ItemDisplay[8mx MAG !ID]://
 ItemDisplay[8mx RARE !ID]://
-ItemDisplay[8mx UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Pus Spitter
+ItemDisplay[8mx UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Pus Spitter
 ItemDisplay[8mx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
@@ -5242,7 +5262,7 @@ ItemDisplay[8mx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 ItemDisplay[8hx NMAG !RW]://
 ItemDisplay[8hx MAG !ID]://
 ItemDisplay[8hx RARE !ID]://
-ItemDisplay[8hx UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Buriza-Do Kyanon
+ItemDisplay[8hx UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Buriza-Do Kyanon
 ItemDisplay[8hx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
@@ -5250,13 +5270,13 @@ ItemDisplay[8hx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 ItemDisplay[8rx NMAG !RW]://
 ItemDisplay[8rx MAG !ID]://
 ItemDisplay[8rx RARE !ID]://
-ItemDisplay[8rx UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Demon Machine
+ItemDisplay[8rx UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Demon Machine
 ItemDisplay[8rx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Elite Crossbows
 //Pellet Bow
-ItemDisplay[6lx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
+//ItemDisplay[6lx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6lx NMAG !RW]://
 ItemDisplay[6lx MAG !ID]://
 ItemDisplay[6lx RARE !ID]://
@@ -5265,7 +5285,7 @@ ItemDisplay[6lx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Gorgon Crossbow
-ItemDisplay[6mx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
+//ItemDisplay[6mx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6mx NMAG !RW]://
 ItemDisplay[6mx MAG !ID]://
 ItemDisplay[6mx RARE !ID]://
@@ -5274,16 +5294,16 @@ ItemDisplay[6mx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Colossus Crossbow
-ItemDisplay[6hx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
+//ItemDisplay[6hx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6hx NMAG !RW]://
 ItemDisplay[6hx MAG !ID]://
 ItemDisplay[6hx RARE !ID]://
-ItemDisplay[6hx UNI !ID]:%UNIQUE_NOTIFY2%%UNIQUE_PREFIX2%%UNIQUE2%%UNIQUE_SUFFIX2%//Hellrack
+ItemDisplay[6hx UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Hellrack
 ItemDisplay[6hx SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
 //Demon Crossbow
-ItemDisplay[6rx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
+//ItemDisplay[6rx NMAG (SOCK=4 OR SOCK=0) ED>5 !RW]:%NAME%{%NAME%}//
 ItemDisplay[6rx NMAG !RW]://
 ItemDisplay[6rx MAG !ID]://
 ItemDisplay[6rx RARE !ID]://
@@ -6016,7 +6036,7 @@ ItemDisplay[ama SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 ItemDisplay[amb NMAG !RW]://
 ItemDisplay[amb MAG !ID]://
 ItemDisplay[amb RARE !ID]://
-ItemDisplay[amb UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Blood Raven's Charge
+ItemDisplay[amb UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Blood Raven's Charge
 ItemDisplay[amb SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
@@ -6032,7 +6052,7 @@ ItemDisplay[amc SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//M'avina'
 ItemDisplay[amd NMAG !RW]://
 ItemDisplay[amd MAG !ID]://
 ItemDisplay[amd RARE !ID]://
-ItemDisplay[amd UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//Stoneraven
+ItemDisplay[amd UNI !ID]:%UNIQUE_NOTIFY1%%UNIQUE_PREFIX1%%UNIQUE1%%UNIQUE_SUFFIX1%//Stoneraven
 ItemDisplay[amd SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//
 
 
