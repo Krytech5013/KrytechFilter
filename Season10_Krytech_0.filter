@@ -3224,7 +3224,7 @@ ItemDisplay[lgl NMAG !RW]://
 ItemDisplay[lgl MAG !ID]://
 ItemDisplay[lgl RARE !ID]://
 ItemDisplay[lgl UNI !ID]:%UNIQUE_NOTIFY0%%UNIQUE_PREFIX0%%UNIQUE0%%UNIQUE_SUFFIX0%//The Hand of Broc
-ItemDisplay[lgl SET !ID]:%SET_NOTIFY0%%SET_PREFIX0%%SET0%%SET_SUFFIX0%//Death's Hand
+ItemDisplay[lgl SET !ID]:%SET_NOTIFY2%%SET_PREFIX2%%SET2%%SET_SUFFIX2%//Death's Hand
 
 
 //	Heavy Gloves
